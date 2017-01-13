@@ -1,7 +1,9 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 exports.devServer = function(options) {
   return {
@@ -13,11 +15,11 @@ exports.devServer = function(options) {
 
       // Unlike the cli flag, this doesn't set
       // HotModuleReplacementPlugin!
-      hot: true,
+      // hot: true,
 
       // Don't refresh if hot loading fails. If you want
       // refresh behavior, set inline: true instead.
-      hotOnly: true,
+      // hotOnly: true,
 
       // Display only errors to reduce the amount of output.
       stats: 'errors-only',
@@ -32,16 +34,29 @@ exports.devServer = function(options) {
       host: options.host, // Defaults to `localhost`
       port: options.port // Defaults to 8080
     },
-    plugins: [
-      // Enable multi-pass compilation for enhanced performance
-      // in larger projects. Good default.
-      new webpack.HotModuleReplacementPlugin({
-        // Disabled as this won't work with html-webpack-template yet
-        //multiStep: true
-      })
-    ]
+    // plugins: [
+    //   // Enable multi-pass compilation for enhanced performance
+    //   // in larger projects. Good default.
+    //   new webpack.HotModuleReplacementPlugin({
+    //     // Disabled as this won't work with html-webpack-template yet
+    //     // multiStep: true
+    //   })
+    // ]
   };
 };
+
+exports.browserSync = function(options) {
+  return {
+    plugins: [
+      new BrowserSyncPlugin({
+        host: options.host, // Defaults to `localhost`
+        port: options.port, // Defaults to 8080,
+        proxy: 'http://localhost:3100/'
+      })
+    ]
+  }
+};
+
 
 exports.loadHandlebars = function(paths) {
   return {
@@ -57,6 +72,7 @@ exports.loadHandlebars = function(paths) {
     },
     plugins: [
       new HtmlWebpackPlugin({
+        inject: true,
         title: 'Inside Frontend',
         template: `${paths}/index.hbs`
       })
@@ -88,7 +104,28 @@ exports.loadCSS = function(paths) {
           // Restrict extraction process to the given
           // paths.
           include: paths,
-          use: ['style-loader', 'css-loader', 'fast-sass-loader', 'postcss-loader']
+          use: [
+            {
+              loader: 'style-loader'
+            },
+            {
+              loader: 'css-loader',
+              options: {
+                importLoaders: 2
+              }
+            },
+            {
+              loader: 'postcss-loader'
+            },
+            {
+              loader: 'sass-loader',
+              options: {
+                outputStyle: 'expanded',
+                sourceMap: true,
+                sourceMapContents: true
+              }
+            }
+          ]
         }
       ]
     }
@@ -101,21 +138,32 @@ exports.extractCSS = function(paths) {
       rules: [
         // Extract CSS during build
         {
-          test: /\.css$/,
+          test: /\.scss$/,
           // Restrict extraction process to the given
           // paths.
           include: paths,
-
+          exclude: /node_modules/,
           loader: ExtractTextPlugin.extract({
             fallbackLoader: 'style-loader',
-            loader: 'css-loader'
+            loader: [
+              {
+                loader: 'css-loader',
+                query: {
+                  minimize: true,
+                  importLoaders: 2,
+                },
+              },
+              'postcss-loader',
+              'sass-loader',
+            ]
           })
         }
       ]
     },
     plugins: [
       // Output extracted CSS to a file
-      new ExtractTextPlugin('[name].[contenthash].css')
+      new ExtractTextPlugin('[name].[contenthash].css'),
+      new OptimizeCssAssetsPlugin()
     ]
   };
 };
@@ -148,7 +196,7 @@ exports.loadJavaScript = function(paths) {
         {
           test: /\.js$/,
           include: paths,
-
+          exclude: /node_modules/,
           loader: 'babel-loader',
           options: {
             // Enable caching for improved performance during

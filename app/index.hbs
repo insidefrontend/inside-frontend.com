@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>{{ htmlWebpackPlugin.options.title }}</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    {{!-- Detect whether the browser is modern enough for our JavaScript --}}
+    var isEnhanced = ('MutationObserver' in window);
+    if (isEnhanced) {
+      document.documentElement.className = document.documentElement.className.replace(/\bcore\b/g, 'enhanced');
+    }
+  </script>
+  <style>
+    {{!-- Hide and show content based on enhanced and core mode --}}
+    .core .enhanced-only,
+    .enhanced .core-only { display: none !important; }
+  </style>
+</head>
+<body>
+<div id="page" class="page">
+{{> components/stripe/index }}
+</div>
+<script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
+</body>
+</html>

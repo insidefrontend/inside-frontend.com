@@ -47,7 +47,8 @@ module.exports = function(env) {
       parts.minifyJavaScript('source-map'),
       parts.clean(PATHS.build),
       parts.generateSourcemaps('source-map'),
-      parts.extractCSS()
+      parts.extractCSS(PATHS.app),
+      parts.loadHandlebars(PATHS.app)
     );
   }
 
@@ -63,12 +64,16 @@ module.exports = function(env) {
       ]
     },
     parts.generateSourcemaps('eval-source-map'),
-    parts.loadHandlebars(PATHS.app),
     parts.loadCSS(),
+    parts.loadHandlebars(PATHS.app),
     parts.devServer({
       // Customize host/port here if needed
       host: process.env.HOST,
-      port: process.env.PORT
+      port: 3100
+    }),
+    parts.browserSync({
+      host: process.env.HOST,
+      port: 3000
     })
   );
 };
