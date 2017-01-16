@@ -3,7 +3,6 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 exports.devServer = function(options) {
   return {
@@ -20,6 +19,7 @@ exports.devServer = function(options) {
       // Don't refresh if hot loading fails. If you want
       // refresh behavior, set inline: true instead.
       // hotOnly: true,
+      inline: true,
 
       // Display only errors to reduce the amount of output.
       stats: 'errors-only',
@@ -57,7 +57,6 @@ exports.browserSync = function(options) {
   }
 };
 
-
 exports.loadHandlebars = function(paths) {
   return {
     module: {
@@ -79,6 +78,7 @@ exports.loadHandlebars = function(paths) {
     ]
   };
 };
+
 exports.lintJavaScript = function(paths) {
   return {
     module: {
@@ -109,21 +109,13 @@ exports.loadCSS = function(paths) {
               loader: 'style-loader'
             },
             {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 2
-              }
+              loader: 'css-loader'
             },
             {
               loader: 'postcss-loader'
             },
             {
-              loader: 'sass-loader',
-              options: {
-                outputStyle: 'expanded',
-                sourceMap: true,
-                sourceMapContents: true
-              }
+              loader: 'sass-loader'
             }
           ]
         }
@@ -149,8 +141,7 @@ exports.extractCSS = function(paths) {
               {
                 loader: 'css-loader',
                 query: {
-                  minimize: true,
-                  importLoaders: 2,
+                  minimize: true
                 },
               },
               'postcss-loader',

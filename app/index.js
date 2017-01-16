@@ -1,5 +1,3 @@
-'use strict';
-
 import './index.scss';
 
 import Stripe from './components/stripe/';

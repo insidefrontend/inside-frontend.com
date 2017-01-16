@@ -69,10 +69,6 @@ module.exports = function(env) {
     parts.devServer({
       // Customize host/port here if needed
       host: process.env.HOST,
-      port: 3100
-    }),
-    parts.browserSync({
-      host: process.env.HOST,
       port: 3000
     })
   );
