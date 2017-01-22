@@ -208,7 +208,7 @@ exports.loadImage = function(paths) {
           test: /\.(jpe?g|png|gif|svg)$/i,
           loader: 'file-loader',
           options: {
-            name: '[path]/[name].[ext]'
+            name: '[path][name].[hash].[ext]'
           }
         }
       ]
