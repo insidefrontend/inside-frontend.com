@@ -63,7 +63,12 @@ exports.loadHandlebars = function(paths) {
         {
           test: /\.hbs$/,
           include: paths,
-          use: 'handlebars-loader'
+          use: [{            
+            loader: 'handlebars-loader',
+            options: {
+              inlineRequires: '\/images\/'
+            } 
+          }]
         }
       ]
     },
@@ -194,6 +199,22 @@ exports.loadJavaScript = function(paths) {
     }
   };
 };
+
+exports.loadImage = function(paths) {
+  return {
+    module: {
+      rules: [
+        {
+          test: /\.(jpe?g|png|gif|svg)$/i,
+          loader: 'file-loader',
+          options: {
+            name: '[path]/[name].[ext]'
+          }
+        }
+      ]
+    }
+  }
+}
 
 exports.clean = function(path) {
   return {

@@ -31,7 +31,6 @@ module.exports = function(env) {
         output: {
           chunkFilename: 'scripts/[chunkhash].js',
           filename: '[name].[chunkhash].js',
-
           // Tweak this to match your GitHub project name
           publicPath: '/inside-frontend/'
         },
@@ -65,6 +64,7 @@ module.exports = function(env) {
     },
     parts.generateSourcemaps('eval-source-map'),
     parts.loadCSS(),
+    parts.loadImage(PATHS.app),
     parts.loadHandlebars(PATHS.app),
     parts.devServer({
       // Customize host/port here if needed
