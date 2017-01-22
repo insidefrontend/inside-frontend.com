@@ -1,0 +1,10 @@
+/* Settings */
+@import 'normalize.css';
+@import './components/settings/index.css';
+
+/* Pages */
+@import './pages/root/index.css';
+@import './pages/home/index.css';
+
+/* UIs */
+@import './components/header/index.css';

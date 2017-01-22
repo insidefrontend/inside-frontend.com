@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 exports.devServer = function(options) {
@@ -64,7 +63,6 @@ exports.loadHandlebars = function(paths) {
         {
           test: /\.hbs$/,
           include: paths,
-
           use: 'handlebars-loader'
         }
       ]
@@ -86,7 +84,6 @@ exports.lintJavaScript = function(paths) {
         {
           test: /\.js$/,
           include: paths,
-
           use: 'eslint-loader',
           enforce: 'pre'
         }
@@ -100,7 +97,7 @@ exports.loadCSS = function(paths) {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.css$/,
           // Restrict extraction process to the given
           // paths.
           include: paths,
@@ -113,9 +110,6 @@ exports.loadCSS = function(paths) {
             },
             {
               loader: 'postcss-loader'
-            },
-            {
-              loader: 'sass-loader'
             }
           ]
         }
@@ -130,7 +124,7 @@ exports.extractCSS = function(paths) {
       rules: [
         // Extract CSS during build
         {
-          test: /\.scss$/,
+          test: /\.css$/,
           // Restrict extraction process to the given
           // paths.
           include: paths,
@@ -144,8 +138,7 @@ exports.extractCSS = function(paths) {
                   minimize: true
                 },
               },
-              'postcss-loader',
-              'sass-loader',
+              'postcss-loader'
             ]
           })
         }
@@ -153,8 +146,7 @@ exports.extractCSS = function(paths) {
     },
     plugins: [
       // Output extracted CSS to a file
-      new ExtractTextPlugin('[name].[contenthash].css'),
-      new OptimizeCssAssetsPlugin()
+      new ExtractTextPlugin('[name].[contenthash].css')
     ]
   };
 };
@@ -164,7 +156,7 @@ exports.lintCSS = function(paths) {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.css$/,
           include: paths,
           use: 'postcss-loader',
           enforce: 'pre'
