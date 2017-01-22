@@ -47,6 +47,7 @@ module.exports = function(env) {
       parts.clean(PATHS.build),
       parts.generateSourcemaps('source-map'),
       parts.extractCSS(PATHS.app),
+      parts.loadImage(PATHS.app),
       parts.loadHandlebars(PATHS.app)
     );
   }
