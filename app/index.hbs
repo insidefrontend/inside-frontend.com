@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>{{ htmlWebpackPlugin.options.title }}</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="2017年2月25日 Frontendカンファレンスを東京ガーデンテラス紀尾井町で開催">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script>
     {{!-- Detect whether the browser is modern enough for our JavaScript --}}
@@ -15,14 +15,23 @@
   <style>
     {{!-- Hide and show content based on enhanced and core mode --}}
     .core .enhanced-only,
+    .core .enhanced-only,
     .enhanced .core-only { display: none !important; }
   </style>
 </head>
 <body>
-<div id="if-page" class="if-page if-page--home">
-  {{> components/header/index }}
-  
-  <img src="./images/source.gif" alt="">
+<div id="if-page" class="if-page if-page--teaser">
+
+  <div class="hero">
+    <img src="./images/logo-w.png" alt="Inside Frontend" class="logo">
+    <p class="date">2017年2月25日</p>
+    <p class="venue"><span class="karn">LODGE</span>（東京ガーデンテラス紀尾井町）</p>
+
+    <p class="action">
+      <a href="https://inside-frontend.connpass.com/event/47920/" class="button" target="_blank">Get The Ticket</a>
+    </p>
+  </div>
+
 </div>
 <script src="//cdn.polyfill.io/v2/polyfill.min.js"></script>
 </body>

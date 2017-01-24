@@ -63,11 +63,11 @@ exports.loadHandlebars = function(paths) {
         {
           test: /\.hbs$/,
           include: paths,
-          use: [{            
+          use: [{
             loader: 'handlebars-loader',
             options: {
               inlineRequires: '\/images\/'
-            } 
+            }
           }]
         }
       ]
@@ -75,7 +75,7 @@ exports.loadHandlebars = function(paths) {
     plugins: [
       new HtmlWebpackPlugin({
         inject: true,
-        title: 'Inside Frontend',
+        title: 'Inside Frontend',\
         template: `${paths}/index.hbs`
       })
     ]

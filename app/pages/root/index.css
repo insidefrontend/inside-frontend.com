@@ -4,6 +4,7 @@ body, html {
 
 html {
   overflow-y: scroll;
+  font-family: -apple-system,Helvetica Neue,Hiragino Sans,"游ゴシック",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serifans-serif;
 }
 
 .if-page {

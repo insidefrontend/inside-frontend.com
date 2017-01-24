@@ -1,3 +1,68 @@
-.if-page--home {
-  background: var(--if-background-500);
+.if-page--teaser {
+  background-image: url('./images/teaser.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 3rem;
+  max-width: 375px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
+.date {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.venue {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  font-weight: 100;
+}
+
+.action {
+  margin-top: 3rem;
+  max-width: 375px;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
+.button {
+  display: block;
+  border-radius: 3px;
+  padding: 1.5rem 2rem;
+  background: var(--if-red-600);
+  color: white;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: inherit;
+  font-weight: 100;
+}
+.button:hover {
+  background: var(--if-red-500);
+}
+
+.karn {
+  letter-spacing: 0.1em;
+}
+
+@media screen {
+  
 }
