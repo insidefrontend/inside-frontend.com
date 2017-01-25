@@ -75,7 +75,7 @@ exports.loadHandlebars = function(paths) {
     plugins: [
       new HtmlWebpackPlugin({
         inject: true,
-        title: 'Inside Frontend',\
+        title: 'Inside Frontend',
         template: `${paths}/index.hbs`
       })
     ]
