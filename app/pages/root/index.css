@@ -1,0 +1,31 @@
+body, html {
+  overflow-x: hidden;
+}
+
+html {
+  overflow-y: scroll;
+  font-family: -apple-system,Helvetica Neue,Hiragino Sans,"游ゴシック",YuGothic,"ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,sans-serifans-serif;
+  font-size: 10px;
+}
+
+.if-page {
+  height: 100%;
+}
+
+@media (max-width: 320px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 480px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 840px) {
+  html {
+    font-size: 16px;
+  }
+}
