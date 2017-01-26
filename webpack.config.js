@@ -47,7 +47,7 @@ module.exports = function(env) {
       parts.clean(PATHS.build),
       parts.generateSourcemaps('source-map'),
       parts.extractCSS(PATHS.app),
-      parts.loadImage(PATHS.app),
+      parts.loadImage(),
       parts.loadHandlebars(PATHS.app)
     );
   }
@@ -65,7 +65,7 @@ module.exports = function(env) {
     },
     parts.generateSourcemaps('eval-source-map'),
     parts.loadCSS(),
-    parts.loadImage(PATHS.app),
+    parts.loadImage(),
     parts.loadHandlebars(PATHS.app),
     parts.devServer({
       // Customize host/port here if needed

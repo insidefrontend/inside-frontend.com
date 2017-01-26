@@ -200,7 +200,7 @@ exports.loadJavaScript = function(paths) {
   };
 };
 
-exports.loadImage = function(paths) {
+exports.loadImage = function() {
   return {
     module: {
       rules: [
@@ -214,7 +214,7 @@ exports.loadImage = function(paths) {
       ]
     }
   }
-}
+};
 
 exports.clean = function(path) {
   return {
