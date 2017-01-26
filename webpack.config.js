@@ -32,7 +32,7 @@ module.exports = function(env) {
           chunkFilename: 'scripts/[chunkhash].js',
           filename: '[name].[chunkhash].js',
           // Tweak this to match your GitHub project name
-          publicPath: '/'
+          publicPath: 'http://inside-frontend.com/'
         },
         plugins: [
           new webpack.HashedModuleIdsPlugin()
@@ -47,7 +47,7 @@ module.exports = function(env) {
       parts.clean(PATHS.build),
       parts.generateSourcemaps('source-map'),
       parts.extractCSS(PATHS.app),
-      parts.loadImage(),
+      parts.loadImage('http://inside-frontend.com/'),
       parts.loadHandlebars(PATHS.app)
     );
   }
