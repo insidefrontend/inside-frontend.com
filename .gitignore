@@ -52,3 +52,4 @@ jspm_packages
 .yarn-integrity
 
 build
+stats.json
