@@ -821,21 +821,23 @@ img {
   height: 1.5em;
   transition: transform 300ms; }
 
-.organizers {
+.footer {
   padding-top: 96px;
   padding-bottom: 96px;
   background-color: white; }
+  .footer > * {
+    margin-top: 24px; }
   @media (max-width: 1081px) {
-    .organizers {
+    .footer {
       padding-top: 48px;
       padding-bottom: 48px; } }
   @media (max-width: 567px) {
-    .organizers {
+    .footer {
       padding-top: 24px;
       padding-bottom: 24px; } }
 
 .organizers-title {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   text-align: center;
   line-height: 1.414; }
   .organizers-title img {
@@ -859,8 +861,9 @@ img {
   margin-right: auto;
   max-width: 1032px; }
   .organizers-list > * {
-    -ms-flex: 1 0 33%;
-        flex: 1 0 33%; }
+    -ms-flex: 0 1 33%;
+        flex: 0 1 33%;
+    text-align: center; }
   @media (max-width: 1081px) {
     .organizers-list {
       margin-left: auto;
@@ -887,6 +890,58 @@ img {
     .organizers-logo {
       width: 240px;
       height: 62px; } }
+
+.sponsors-title {
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 1.414; }
+  .sponsors-title img {
+    width: 134px;
+    height: 32px; }
+  @media (max-width: 567px) {
+    .sponsors-title {
+      margin-bottom: 24px; }
+      .sponsors-title img {
+        width: 98px;
+        height: 22px; } }
+
+.sponsors-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1032px; }
+  .sponsors-list > * {
+    -ms-flex: 0 1 33%;
+        flex: 0 1 33%;
+    text-align: center; }
+  @media (max-width: 1081px) {
+    .sponsors-list {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 774px; } }
+  @media (max-width: 801px) {
+    .sponsors-list > * {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+      text-align: center; } }
+
+.sponsors-logo {
+  width: 240px;
+  height: auto; }
+  @media (max-width: 1081px) {
+    .sponsors-logo {
+      width: 180px; } }
+  @media (max-width: 801px) {
+    .sponsors-logo {
+      width: 180px; } }
+  @media (max-width: 567px) {
+    .sponsors-logo {
+      width: 180px; } }
 
 .contentinfo {
   padding-top: 48px;
