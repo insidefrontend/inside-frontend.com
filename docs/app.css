@@ -822,8 +822,8 @@ img {
   transition: transform 300ms; }
 
 .footer {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  padding-top: 48px;
+  padding-bottom: 72px;
   background-color: white; }
   .footer > * {
     margin-top: 24px; }
