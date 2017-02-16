@@ -769,6 +769,53 @@ img {
     .tickets-note {
       font-size: 0.875rem; } }
 
+.ama {
+  padding-top: 48px;
+  text-align: center;
+  color: #2f2f30; }
+  @media (max-width: 1081px) {
+    .ama {
+      padding-top: 48px; } }
+  @media (max-width: 567px) {
+    .ama {
+      padding-top: 24px; } }
+
+.ama-title {
+  margin-bottom: 24px;
+  text-align: center;
+  line-height: 1.414;
+  color: #2f2f30;
+  font-size: 1.375rem; }
+  @media (max-width: 1081px) {
+    .ama-title {
+      margin-bottom: 24px;
+      font-size: 1.125rem; } }
+  @media (max-width: 567px) {
+    .ama-title {
+      margin-bottom: 12px;
+      line-height: normal;
+      font-size: 1rem; } }
+
+.ama-lead {
+  margin-bottom: 12px;
+  font-size: 1rem; }
+  @media (max-width: 567px) {
+    .ama-lead {
+      font-size: 0.875rem; } }
+
+.ama-note {
+  margin-top: 12px;
+  color: #485C63;
+  font-size: 0.875rem; }
+  @media (max-width: 567px) {
+    .ama-note {
+      font-size: 0.75rem; } }
+
+.ama-button .button {
+  background-color: #d9bb47; }
+  .ama-button .button:hover {
+    background-color: #b09324; }
+
 .button {
   display: inline-block;
   border: 2px solid currentColor;
