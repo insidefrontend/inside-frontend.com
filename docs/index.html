@@ -984,7 +984,7 @@
         <li><a href="https://frontrend.connpass.com/" target="_blank" rel="noopener">Frontrend</a></li>
       </ul>
     </div>
-    <p class="copyright">© 2017, Inside Frontend</p>
+    <p class="copyright">© 2018, Inside Frontend</p>
   </div>
 </footer>
 
@@ -1006,16 +1006,10 @@
         var markerOptions = {
             position: latLng,
             map: map,
-            title: "LODGE"
+            title: "日経ホール"
         };
         var marker = new google.maps.Marker(markerOptions);
-        var styleOptions = [
-            {
-                "stylers": [
-//          { "saturation": "-100"}
-                ]
-            }
-        ];
+        var styleOptions = [];
         var styledMapOptions = { name: "Inside Frontend" }
         var styleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
         map.mapTypes.set("style", styleType);
