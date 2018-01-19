@@ -1,6 +1,5 @@
-<html lang="ja"><head><link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700"><style type="text/css">.gm-style .gm-style-cc span,.gm-style .gm-style-cc a,.gm-style .gm-style-mtc div{font-size:10px}
-</style><style type="text/css">@media print {  .gm-style .gmnoprint, .gmnoprint {    display:none  }}@media screen {  .gm-style .gmnoscreen, .gmnoscreen {    display:none  }}</style><style type="text/css">.gm-style-pbc{transition:opacity ease-in-out;background-color:rgba(0,0,0,0.45);text-align:center}.gm-style-pbt{font-size:22px;color:white;font-family:Roboto,Arial,sans-serif;position:relative;margin:0;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%)}
-</style>
+<html lang="ja">
+  <head>
   <meta charset="utf-8">
   <title>Inside Frontend</title>
   <meta name="description" content="2017年2月11日 Frontendカンファレンスを東京ガーデンテラス紀尾井町で開催">
@@ -26,9 +25,9 @@
 
 <div class="background">
   <picture>
-    <!--<source type="image/webp" media="(max-width: 800px)" srcset="./img/bg-s.webp">-->
-    <!--<source media="(max-width: 800px)" srcset="./img/bg-s.jpg">-->
-    <!--<source type="image/webp" srcset="./img/bg.webp">-->
+    <source type="image/webp" media="(max-width: 800px)" srcset="./img/bg-s.webp">
+    <source media="(max-width: 800px)" srcset="./img/bg-s.jpg">
+    <source type="image/webp" srcset="./img/bg.webp">
     <img src="./img/bg.jpg">
   </picture>
 </div>
@@ -361,7 +360,7 @@
               日経電子版を速くするためにやっていること
             </p>
             <p class="program-summary">
-              <a href="r.nikkei.com" target="_blank" rel="noopener">日経電子版</a>を速くするために何をしているかについて話します。Fastlyの活用やキャッシュ制御、Service Workerなどがトピックになりますが、主に現場でどうがんばったかについて一歩突っ込んで話せたらと思います。
+              <a href="https://r.nikkei.com/" target="_blank" rel="noopener">日経電子版</a>を速くするために何をしているかについて話します。Fastlyの活用やキャッシュ制御、Service Workerなどがトピックになりますが、主に現場でどうがんばったかについて一歩突っ込んで話せたらと思います。
             </p>
             <a href="#seminar-a4" class="program-link">
               <img src="./img/ico-link.svg">
@@ -985,7 +984,7 @@
         <li><a href="https://frontrend.connpass.com/" target="_blank" rel="noopener">Frontrend</a></li>
       </ul>
     </div>
-    <p class="copyright">© 2017, Inside Frontend</p>
+    <p class="copyright">© 2018, Inside Frontend</p>
   </div>
 </footer>
 
@@ -1007,16 +1006,10 @@
         var markerOptions = {
             position: latLng,
             map: map,
-            title: "LODGE"
+            title: "日経ホール"
         };
         var marker = new google.maps.Marker(markerOptions);
-        var styleOptions = [
-            {
-                "stylers": [
-//          { "saturation": "-100"}
-                ]
-            }
-        ];
+        var styleOptions = [];
         var styledMapOptions = { name: "Inside Frontend" }
         var styleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
         map.mapTypes.set("style", styleType);
