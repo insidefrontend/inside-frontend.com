@@ -125,22 +125,49 @@ img {
     padding-bottom: 24px;
   }
 }
+.header-title {
+  position: relative;
+}
+.header-title,
 .header-logo {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
   width: 640px;
   height: 320px;
 }
+.header-number {
+  position: absolute;
+  bottom: -48px;
+  right: -64px;
+  width: 100px;
+  height: 100px;
+}
 @media (max-width: 801px) {
+  .header-title,
   .header-logo {
     margin-bottom: 24px;
     width: 420px;
     height: 210px;
   }
+  .header-number {
+    bottom: -32px;
+    right: -42px;
+    width: 64px;
+    height: 64px;
+  }
 }
 @media (max-width: 567px) {
+  .header-title,
   .header-logo {
     width: 320px;
     height: 160px;
+  }
+  .header-number {
+    bottom: -24px;
+    right: -36px;
+    width: 48px;
+    height: 48px;
   }
 }
 .header-date {
