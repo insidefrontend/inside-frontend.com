@@ -913,10 +913,6 @@ img {
   opacity: 1;
   transform: translateY(0);
 }
-.speaker:target .speaker-avatar > img,
-.speaker:hover .speaker-avatar > img {
-  opacity: 0.5;
-}
 .speaker > * {
   width: 100%;
   /*-ms-flex: 1 1 50%;*/
@@ -925,6 +921,10 @@ img {
 @media (max-width: 567px) {
   .speaker {
     background-color: transparent;
+  }
+  .speaker:target .speaker-avatar > img,
+  .speaker:hover .speaker-avatar > img {
+    opacity: 0.5;
   }
 }
 .speaker-avatar > img{
@@ -940,6 +940,7 @@ img {
   }
   .speaker-avatar > img {
     mix-blend-mode: normal;
+    transition: opacity 300ms ease-out;
   }
 }
 .speaker-profile {
