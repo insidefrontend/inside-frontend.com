@@ -165,9 +165,20 @@ img {
   }
   .header-number {
     bottom: -24px;
-    right: -36px;
+    right: -24px;
     width: 48px;
     height: 48px;
+  }
+}
+@media (max-width: 375px) {
+  .header-title,
+  .header-logo {
+    width: 280px;
+    height: 140px;
+  }
+  .header-number {
+    bottom: -32px;
+    right: -18px;
   }
 }
 .header-date {
@@ -968,10 +979,20 @@ img {
   line-height: 1.2;
   font-size: 1.375rem;
 }
+@media (max-width: 375px) {
+  .speaker-name {
+    display: none;
+  }
+}
 .speaker-id {
   margin-bottom: 6px;
   font-size: 0.875rem;
   color: #f6fcf9;
+}
+@media (max-width: 375px) {
+  .speaker-id {
+    font-size: 1rem;
+  }
 }
 .speaker-from {
   margin-bottom: 12px;
