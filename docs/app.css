@@ -231,11 +231,13 @@ img {
     font-size: 1.125rem;
   }
 }
+
 .thanks {
   margin-bottom: 48px;
   padding: 72px 0;
   background-image: url("img/thanks.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
   color: white;
 }
 @media (max-width: 1081px) {
