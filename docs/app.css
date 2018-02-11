@@ -814,6 +814,25 @@ img {
   font-size: 0.75rem;
   color: #485C63;
 }
+.program-slide {
+  margin-top: 0.5em;
+  text-align: right;
+}
+.program-slide a {
+  display: inline-block;
+  padding: 0.5em 0.25em;
+  line-height: 1.216;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 0.825rem;
+  transition: background-color 500ms;
+}
+.program-slide img {
+  margin-right: 0.125em;
+  width: 1em;
+  height: 1em;
+}
+
 .speakers {
   margin-bottom: 48px;
   padding-top: 48px;
