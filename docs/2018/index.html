@@ -1,0 +1,1274 @@
+<html lang="ja">
+  <head>
+  <meta charset="utf-8">
+  <title>Inside Frontend</title>
+  <meta name="description" content="2017年2月11日 Frontendカンファレンスを東京ガーデンテラス紀尾井町で開催">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:title" content="Inside Frontend #2 | 2月11日開催！">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="http://inside-frontend.com/">
+  <meta name="twitter:site" content="@insidefrontend">
+  <meta name="twitter:image" content="http://inside-frontend.com/img/ogimage_issue2.png">
+  <meta name="twitter:description" content="Web フロントエンドの現場とこれからをつなぐカンファレンス">
+  <meta property="og:title" content="Inside Frontend #2 | 2月11日開催！">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://inside-frontend.com/">
+  <meta property="og:image" content="http://inside-frontend.com/img/ogimage_issue2.png">
+  <meta property="og:description" content="Web フロントエンドの現場とこれからをつなぐカンファレンス">
+  <link rel="apple-touch-icon" sizes="180x180" href="./2018/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="./2018/img/icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="./2018/img/icons/favicon-16x16.png" sizes="16x16">
+  <link rel="mask-icon" href="./2018/img/icons/safari-pinned-tab.svg" color="#d75a43">
+  <link rel="stylesheet" href="./2018/app.css">
+  </head>
+<body>
+
+<div class="background">
+  <picture>
+    <source type="image/webp" media="(max-width: 800px)" srcset="./2018/img/bg-s.webp">
+    <source media="(max-width: 800px)" srcset="./2018/img/bg-s.jpg">
+    <source type="image/webp" srcset="./2018/img/bg.webp">
+    <img src="./2018/img/bg.jpg">
+  </picture>
+</div>
+
+<nav class="nav" role="navigation">
+  <ul class="nav-list">
+    <li><a href="#timetable">Timetable</a></li>
+    <li><a href="#speakers">Speakers</a></li>
+    <li><a href="#venue">Venue</a></li>
+  </ul>
+</nav>
+
+<header class="header" role="banner">
+  <h1 class="header-title">
+    <a href="./">
+      <img src="./2018/img/logo.svg" alt="Inside Frontend" class="header-logo">
+    </a>
+    <img src="./2018/img/issue2.png" alt="#2" class="header-number">
+  </h1>
+  <p class="header-date"><time datetime="2018-02-11"><img src="./2018/img/date.svg" alt="2018-02-11"></time></p>
+  <p class="header-venue">
+    日経カンファレンスルーム<br>
+    （<a href="https://www.google.co.jp/maps/place/%E6%97%A5%E7%B5%8C%E3%83%9B%E3%83%BC%E3%83%AB/@35.688687,139.7600703,17z/data=!3m1!4b1!4m5!3m4!1s0x60188c08aea1cd65:0x36917b8b69e8c257!8m2!3d35.688687!4d139.762259?shorturl=1" class="header-venueSub" target="_blank" rel="noopener">東京都千代田区大手町1−3−7 日経ビル</a>）
+  </p>
+  <p class="header-tag">
+    ハッシュタグ「<a href="https://twitter.com/search?q=%23insideFE&amp;src=typd" target="_blank" rel="noopener">#insideFE</a>」
+  </p>
+</header>
+
+<main role="main">
+  <!-- Thank you for coming-->
+  <section class="thanks" id="thanks">
+    <h2 class="thanks-title"><img src="./2018/img/hd-thanks.svg" alt="ご来場ありがとうございました！"></h2>
+    <div class="thanks-body">
+      <p>Inside Frontend #2にご来場いただきありがとうございました！</p>
+      <p>本イベントのセッション（AMAを除く）は、FRESH!のTech Conferenceチャンネルにてアーカイブ配信されています。当日見逃してしまったセッションのチェックや、残念ながら来場できなかった皆さまもぜひご覧ください。</p>
+      <div class="thanks-archives">
+        <p class="archive">
+          <a href="https://freshlive.tv/tech-conference/189060" class="archive-button button" target="_blank" rel="noopener">
+            <img src="./2018/img/logo-fresh.png" alt="FRESH!" class="archive-logo
+">Inside Frontend #2 Seminar A
+          </a>
+        </p>
+        <p class="archive">
+          <a href="https://freshlive.tv/tech-conference/189061" class="archive-button button" target="_blank" rel="noopener">
+            <img src="./2018/img/logo-fresh.png" alt="FRESH!" class="archive-logo
+">Inside Frontend #2 Seminar B
+          </a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Introduction-->
+  <section class="intro" id="intro">
+    <h2 class="intro-title">Web フロントエンドの現場と<br class="u-hidden-m">これからをつなぐカンファレンス</h2>
+    <div class="intro-body">
+      <p>Web 技術の可能性が広がると共に、Web フロントエンドと呼ばれる領域は多様化しています。さまざまな現場が今どうのような個別の問題に取り組んでいるのか、同時に Web が今後どのように発展していく可能性があるのか、これらを一緒に考えていく場です。</p>
+      <p>本イベントでは、各社の現場で得られたノウハウや、これからの Web 技術について見る、聞く、話すなどして参加者同士の濃いコミュニケーションが生まれることを期待しています。</p>
+    </div>
+
+    <section class="session">
+      <h3 class="session-title">2つのセッション形式と企業ブース</h3>
+      <p class="session-lead">
+        セミナー・座学形式で聴講するセッションだけでなく、AMAブースにも是非参加していただき、スピーカーと他の参加者と交流を深めてもらえればとおもいます。また共催企業によるブースもありますので、セッションの待ち時間等にこちらもお楽しみください。
+      </p>
+      <div class="session-body">
+        <div class="session-seminar">
+          <h4 class="session-subtitle -seminar">セミナー</h4>
+          <p>各社のケーススタディの紹介やある分野のスペシャリストによる講演を行う、一般的なプレゼンテーションです。30 分のセッションを 2 トラック並行で 5 コマ、計 10 セッションを行う予定です。</p>
+          <p class="session-note">※ 各セッション部屋には十分な席数を用意しますが、混雑時はご協力ください</p>
+        </div>
+        <div class="session-ama">
+          <h4 class="session-subtitle -ama">AMA</h4>
+          <p>特定のテーマについてブースのオーナーと自由に話ができるセッションです。今回は AMA ブースをひとつの大部屋をゆるく区切って開催します。同じ部屋にドリンク、お菓子などを用意した交流スペースも用意していますのでインターバル時間などにぜひご利用ください。</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="ama">
+      <h3 class="ama-title">AMAブースでは皆さまからの質問を募集しています。</h3>
+      <p class="ama-lead">当日はいただいた質問への回答、あるいはそれをテーマにした議論を展開できればと思いますので、ぜひご質問ください。
+      </p>
+      <p class="ama-button">
+        <a href="https://github.com/insidefrontend/issue2-ama" class="button" target="_blank" rel="noopener">Ask Me Anything</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="timetable" id="timetable">
+    <h3 class="timetable-title">
+      <img src="./2018/img/hd-timetable.svg" alt="タイムテーブル">
+    </h3>
+    <dl class="timetable-table">
+      <dt class="timetable-time">12:00</dt>
+      <dd class="timetable-content">
+        <div class="timetable-cell">
+          <div class="program">
+            <p class="program-topic u-tac">開場</p>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">13:00</dt>
+      <dd class="timetable-content">
+        <div class="timetable-cell">
+          <div class="program">
+            <p class="program-topic u-tac">開会、会場案内</p>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">13:20</dt>
+      <dd class="timetable-content -seminar">
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-a1">
+            <p class="program-label">セミナー: A1</p>
+            <p class="program-owner"><a href="#triblondon">@triblondon</a></p>
+            <p class="program-topic">
+              Varyヘッダとキャッシュバリエーションの将来
+            </p>
+            <p class="program-summary">
+              Varyヘッダを正しく利用することでより効率的にコンテンツをキャッシュすることが可能になる。今回、Andrew Betts氏がVaryの正しい使い方と新しい仕様であるkeyとの両方について詳しく解説。<br/>
+              ※本セッションは英語によるセッションとなります。（日本語字幕スライドつき）
+            </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/triblondon/vary-and-the-future-of-cache-variation" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-a1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-b1">
+            <p class="program-label">セミナー: B1</p>
+            <p class="program-owner"><a href="#magi1125">@magi1125</a></p>
+            <p class="program-topic">
+              freeeのアクセシビリティ、いまとこれから
+            </p>
+            <p class="program-summary">
+              FinTech・HRTechの分野で快進撃を続けるfreeeのプロダクト、アクセシビリティ観点では今どうなっているのか？社員自らがアクセシビリティチェックした結果と、考えうる解決策について考察します。
+            </p>
+            <p class="program-slide">
+              <a href="https://docs.google.com/presentation/d/1D2DP0aP4l5N3MKNtt-LbfLeAEexkXYs4snC8vmzur3o/edit#slide=id.p" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-b1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">14:00</dt>
+      <dd class="timetable-content -ama">
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c1-1">
+            <p class="program-label">AMA: C1-1</p>
+            <p class="program-owner">
+              <a href="#toshiaizawa">@toshiaizawa</a>
+            </p>
+            <p class="program-topic">
+              Fastly のエッジクラウドについて何でも訊いて下さい
+            </p>
+            <p class="program-summary">
+              次世代 CDN の Fastly エッジクラウドについて何でも訊いて下さい。特徴、使い方、「あれはできるの？」といった機能面はもちろん、社風や体制まで。話せる限り何でもお伝えします。
+            </p>
+            <a href="#ama-c1-1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c1-2">
+            <p class="program-label">AMA: C1-2</p>
+            <p class="program-owner"><a href="#magi1125">@magi1125</a></p>
+            <p class="program-topic">freeeのアクセシビリティ、いまとこれから</p>
+            <p class="program-summary">
+              FinTech・HRTechの分野で快進撃を続けるfreeeのプロダクト、アクセシビリティ観点では今どうなっているのか？社員自らがアクセシビリティチェックした結果と、考えうる解決策について考察します。
+            </p>
+            <a href="#ama-c1-2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c1-3">
+            <p class="program-label">AMA: C1-3</p>
+            <p class="program-owner"><a href="#agektmr">@agektmr</a></p>
+            <p class="program-topic">Web Payments / Payment Request API について何でも訊いて下さい</p>
+            <p class="program-summary">
+              Payment Request API, Payment Handler API などの Web Payments にまつわるフロントエンド仕様についての質問を受け付けます。その他決済システムにまつわる疑問についても、可能な範囲でお答えできればと思っています。
+            </p>
+            <a href="#ama-c1-3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">14:30</dt>
+      <dd class="timetable-content -seminar">
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-a2">
+            <p class="program-label">セミナー: A2</p>
+            <p class="program-owner"><a href="#mizchi">@mizchi</a></p>
+            <p class="program-topic">
+              現場の ES201x とアーキテクチャの変遷と未来
+            </p>
+            <p class="program-summary">
+              フロントエンド激動の時代を経て、キャッチアップに苦しむ現場や、経年劣化に苦しむプロダクトなどが散見されるようになりました。 ここ10年のアーキテクチャの変遷を振り返り、次の世代に何を見定めるべきか明確にします。
+              </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/mizchi/real-world-es201x-and-future" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-a2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-b2">
+            <p class="program-label">セミナー: B2</p>
+            <p class="program-owner"><a href="#pika_shi">@pika_shi</a></p>
+            <p class="program-topic">
+              「規約に同意」のUX -ストレスフリーな同意UIとその実現方法-
+            </p>
+            <p class="program-summary">
+              FOLIOをはじめとする金融機関では、口座開設の際、膨大な書類に目を通し、同意をしてもらわなければなりません。たかが「規約に同意」という1ページの話ですが、いかにユーザに「面倒そう」と思わせないようなUIを実現したのか、その変遷についてお話します。
+            </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/pika_shi/gui-yue-nitong-yi-falseux-sutoresuhurinatong-yi-uitosofalseshi-xian-fang-fa" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-b2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">15:10</dt>
+      <dd class="timetable-content -ama">
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c2-1">
+            <p class="program-label">AMA: C2-1</p>
+            <p class="program-owner"><a href="#mizchi">@mizchi</a></p>
+            <p class="program-topic">
+              現場の ES201x とアーキテクチャの変遷と未来
+            </p>
+            <p class="program-summary">
+              フロントエンド激動の時代を経て、キャッチアップに苦しむ現場や、経年劣化に苦しむプロダクトなどが散見されるようになりました。 ここ10年のアーキテクチャの変遷を振り返り、次の世代に何を見定めるべきか明確にします。
+            </p>
+            <a href="#ama-c2-1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c2-2">
+            <p class="program-label">AMA: C2-2</p>
+            <p class="program-owner"><a href="#magi1125">@magi1125</a></p>
+            <p class="program-topic">freeeのアクセシビリティ、いまとこれから</p>
+            <p class="program-summary">
+              FinTech・HRTechの分野で快進撃を続けるfreeeのプロダクト、アクセシビリティ観点では今どうなっているのか？社員自らがアクセシビリティチェックした結果と、考えうる解決策について考察します。
+            </p>
+            <a href="#ama-c2-2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c2-3">
+            <p class="program-label">AMA: C2-3</p>
+            <p class="program-owner"><a href="#agektmr">@agektmr</a></p>
+            <p class="program-topic">Web Payments / Payment Request API について何でも訊いて下さい</p>
+            <p class="program-summary">
+              Payment Request API, Payment Handler API などの Web Payments にまつわるフロントエンド仕様についての質問を受け付けます。その他決済システムにまつわる疑問についても、可能な範囲でお答えできればと思っています。
+            </p>
+            <a href="#ama-c2-3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">15:40</dt>
+      <dd class="timetable-content -seminar">
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-a3">
+            <p class="program-label">セミナー: A3</p>
+            <p class="program-owner"><a href="#pirosikick">@pirosikick</a></p>
+            <p class="program-topic">
+              コンポーネントTDDの実践から見えたもの
+            </p>
+            <p class="program-summary">
+              React・VueのプロジェクトにおけるコンポーネントのTDDの実践方法とコツ、実践して見えたメリットや課題感について話します。
+            </p>
+            <p class="program-slide">
+              <a href="https://www.slideshare.net/hiroyukianai/inside-frontend-2-insidefe" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-a3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-b3">
+            <p class="program-label">セミナー: B3</p>
+            <p class="program-owner"><a href="#sutiwo">@sutiwo</a></p>
+            <p class="program-topic">
+              攻めつづける FRESH! の Web ver.新春
+            </p>
+            <p class="program-summary">
+              FRESH! では昨年にService Workerを用いたユーザビリティ、パフォーマンスの改善を進めました。今回は新たにPayment Request APIを使った機能実装や、React v16対応、E2Eテストなどの話をします。
+            </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/sutiwo/gong-metudukeru-fresh-falseweb-ver-dot-xin-chun" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-b3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">16:20</dt>
+      <dd class="timetable-content -ama">
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c3-1">
+            <p class="program-label">AMA: C3-1</p>
+            <p class="program-owner"><a href="#mizchi">@mizchi</a></p>
+            <p class="program-topic">
+              現場の ES201x とアーキテクチャの変遷と未来
+            </p>
+            <p class="program-summary">
+              フロントエンド激動の時代を経て、キャッチアップに苦しむ現場や、経年劣化に苦しむプロダクトなどが散見されるようになりました。 ここ10年のアーキテクチャの変遷を振り返り、次の世代に何を見定めるべきか明確にします。
+            </p>
+            <a href="#ama-c3-1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c3-2">
+            <p class="program-label">AMA: C3-2</p>
+            <p class="program-owner"><a href="#pirosikick">@pirosikick</a>, <a href="#koh110">@koh110</a>, <a href="#ikasumiwt">@ikasumiwt</a></p>
+            <p class="program-topic">
+              コンポーネント座談会
+            </p>
+            <p class="program-summary">
+              コンポーネントに関する質問をY!のReact・Vue・Angular勢のそれぞれの視点でお答えします。また「うちはこうしてる」も大歓迎なので、一緒に議論しましょう。            </p>
+            <a href="#ama-c3-2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c3-3">
+            <p class="program-label">AMA: C3-3</p>
+            <p class="program-owner"><a href="#ahomu">@ahomu</a>, <a href="#1000ch">@1000ch</a></p>
+            <p class="program-topic">
+              Web パフォーマンスについて何でも訊いて下さい
+            </p>
+            <p class="program-summary">
+              超速 AMA です。Web パフォーマンスについて何でも訊いてください。処理分野（ネットワーク、レンダリング、スクリプト）ごとの最適化、フェーズ（ページロード、ランタイム）毎のパフォーマンスの捉え方、超速本についてなど、可能な限りお答えします。
+            </p>
+            <a href="#ama-c3-3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">16:50</dt>
+      <dd class="timetable-content -seminar">
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-a4">
+            <p class="program-label">セミナー: A4</p>
+            <p class="program-owner"><a href="#sisidovski">@sisidovski</a></p>
+            <p class="program-topic">
+              日経電子版を速くするためにやっていること
+            </p>
+            <p class="program-summary">
+              <a href="https://r.nikkei.com/" target="_blank" rel="noopener">日経電子版</a>を速くするために何をしているかについて話します。Fastlyの活用やキャッシュ制御、Service Workerなどがトピックになりますが、主に現場でどうがんばったかについて一歩突っ込んで話せたらと思います。
+            </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/sisidovski/nikkei-inside-frontend" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-a4" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-b4">
+            <p class="program-label">セミナー: B4</p>
+            <p class="program-owner"><a href="#narirou">@narirou</a></p>
+            <p class="program-topic">
+              動的デザインガイドのつくり方
+            </p>
+            <p class="program-summary">
+              サービスとして一貫したデザインを保ち、継続的にアップデートしていくためには、意図を簡単に実現するシステムが必要不可欠です。
+              AtomicDesignを念頭に、ReactStoryBook等で実践されている動的にデザインガイドラインを生成する仕組みと、実際にサービスに導入して実践するまで(と説得方法)を、GYAO!のWeb刷新の実例を交えて示します。
+            </p>
+            <p class="program-slide">
+              <a href="https://speakerdeck.com/narirou/dong-de-dezaingaidorainfalsetukurifang" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-b4" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">17:30</dt>
+      <dd class="timetable-content -ama">
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c4-1">
+            <p class="program-label">AMA: C4-1</p>
+            <p class="program-owner"><a href="#sisidovski">@sisidovski</a>, <a href="#cssradar">@cssradar</a></p>
+            <p class="program-topic">
+              日経電子版の高速化について何でも訊いて下さい
+            </p>
+            <p class="program-summary">
+              日経電子版について何でも訊いて下さい。Fastly、Service WorkerやPWA、その他フロントエンドやサーバサイドで気になる部分や、開発体制などについてでも可能な限りお答えします。
+            </p>
+            <a href="#ama-c4-1" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c4-2">
+            <p class="program-label">AMA: C4-2</p>
+            <p class="program-owner"><a href="#narirou">@narirou</a>, <a href="#ooDEMi">@ooDEMi</a>, <a href="#deytack">@deytack</a></p>
+            <p class="program-topic">
+              デザインとエンジニアリングのワークフローについて語りましょう
+            </p>
+            <p class="program-summary">
+              高度なプロトタイピングツール、デザインシステムといった、様々な手法が台頭している現在、そのあり方は再び変わりつつあります。
+              協業する上での悩み、ノウハウ、Yahoo/GYAO/リッチラボで実践されているワークフローについて、なんでもお答えします。</p>
+            <a href="#ama-c4-2" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -ama" id="ama-c4-3">
+            <p class="program-label">AMA: C4-3</p>
+            <p class="program-owner"><a href="#ktknest">@ktknest</a>, <a href="#saneyuki">@saneyuki</a>, <a href="#kubosho">@kubosho</a></p>
+            <p class="program-topic">
+              AbemaTVだけど質問ある？
+            </p>
+            <p class="program-summary">
+              AbemaTVに関する質問に答えます。AbemaTV関係なく, 登壇者（とその発表）に関する質問でも大丈夫です。
+            </p>
+            <a href="#ama-c4-3" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">18:00</dt>
+      <dd class="timetable-content -seminar">
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-a5">
+            <p class="program-label">セミナー: A5</p>
+            <p class="program-owner"><a href="#saneyuki">@saneyuki</a>, ゲスト</p>
+            <p class="program-topic">
+              micro-benchmarking is hard
+            </p>
+            <p class="program-summary">
+              ベンチマークはアプリケーションの評価を行う上で最も根幹となるものであり、そのため、ベンチマーク自身の有用性は常に議論されるところである。このセッションではマイクロベンチマークが容易に本来の意味を見失うということをJS VMの実例をもって示す。
+            </p>
+            <p class="program-slide">
+              <a href="https://docs.google.com/presentation/d/1MXlFGqFQFJByv8k6Ege0pt0GwJQqbjoh7GdIYia9UQg/edit#slide=id.p" target="_blank" rel="noopener"><img src="./2018/img/ico-slide.svg"> 講演資料</a>
+            </p>
+            <a href="#seminar-a5" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+        <div class="timetable-cell">
+          <div class="program -seminar" id="seminar-b5">
+            <p class="program-label">セミナー: B5</p>
+            <p class="program-owner"><a href="#oligin020">oligin020</a></p>
+            <p class="program-topic">
+              デザインシステムとコードを密結合するワークフロー
+            </p>
+            <p class="program-summary">
+              デザインと開発実装を同時並行で進めつつ、いかに統制がとれた状態を維持していく為に行った事の紹介と運用のデモを行いたいと思います。UIの作り込みに工数を注ぎやすくする方法論の一つになります。
+            </p>
+            <a href="#seminar-b5" class="program-link">
+              <img src="./2018/img/ico-link.svg">
+            </a>
+          </div>
+        </div>
+      </dd>
+
+      <dt class="timetable-time">18:30</dt>
+      <dd class="timetable-content">
+        <div class="timetable-cell">
+          <div class="program">
+            <p class="program-topic u-tac">閉会</p>
+          </div>
+        </div>
+      </dd>
+    </dl>
+  </section>
+
+  <!-- Speakers -->
+  <section class="speakers" id="speakers">
+    <h3 class="speakers-title">
+      <img src="./2018/img/hd-speakers.svg" alt="スピーカー">
+    </h3>
+    <ul class="speakers-list">
+      <li>
+        <div class="speaker" id="triblondon">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-triblondon.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Andrew Betts
+            </p>
+            <p class="speaker-id">
+              @triblondon
+            </p>
+            <p class="speaker-from">Fastly</p>
+            <p class="speaker-session">
+              <a href="#seminar-a1" class="speaker-label -seminar">セミナー: A1</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/triblondon" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://trib.tv/" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-website.svg" alt="Website">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="magi1125">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-magi1125.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Rikiya Ihara
+            </p>
+            <p class="speaker-id">
+              @magi1125
+            </p>
+            <p class="speaker-from">freee</p>
+            <p class="speaker-session">
+              <a href="#seminar-b1" class="speaker-label -seminar">セミナー: B1</a>
+              <a href="#ama-c1-2" class="speaker-label -ama">AMA: C1-2/2-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/magi1125" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="agektmr">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-agektmr.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Eiji Kitamura
+            </p>
+            <p class="speaker-id">
+              @agektmr
+            </p>
+            <p class="speaker-from">Google</p>
+            <p class="speaker-session">
+              <a href="#ama-c1-3" class="speaker-label -ama">AMA: C1-3/2-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/agektmr" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://blog.agektmr.com" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-website.svg" alt="Website">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="toshiaizawa">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-toshiaizawa.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Toshi Aizawa
+            </p>
+            <p class="speaker-id">
+              @toshiaizawa
+            </p>
+            <p class="speaker-from">Fastly</p>
+            <p class="speaker-session">
+              <a href="#ama-c1-1" class="speaker-label -ama">AMA: C1-1</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://github.com/toshiaizawa" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="mizchi">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-mizchi.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Koutaro Chikuba
+            </p>
+            <p class="speaker-id">
+              @mizchi
+            </p>
+            <p class="speaker-from">フリーランス</p>
+            <p class="speaker-session">
+              <a href="#seminar-a2" class="speaker-label -seminar">セミナー: A2</a>
+              <a href="#ama-c2-1" class="speaker-label -ama">AMA: C2-1/3-1</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/mizchi" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="pika_shi">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-pika_shi.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              pika_shi
+            </p>
+            <p class="speaker-id">
+              @pika_shi
+            </p>
+            <p class="speaker-from">FOLIO</p>
+            <p class="speaker-session">
+              <a href="#seminar-b2" class="speaker-label -seminar">セミナー: B2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/pika_shi" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://pikashi.tokyo/" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-website.svg" alt="Website">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="pirosikick">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-pirosikick.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              穴井 宏幸
+            </p>
+            <p class="speaker-id">
+              @pirosikick
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#seminar-a3" class="speaker-label -seminar">セミナー: A3</a>
+              <a href="#ama-c3-2" class="speaker-label -ama">AMA: C3-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/pirosikick" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="koh110">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-koh110.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              伊藤 康太
+            </p>
+            <p class="speaker-id">
+              @koh110
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#ama-c3-2" class="speaker-label -ama">AMA: C3-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/koh110" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="ikasumiwt">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-ikasumiwt.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              加藤 佑典
+            </p>
+            <p class="speaker-id">
+              @ikasumiwt
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#ama-c3-2" class="speaker-label -ama">AMA: C3-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://github.com/ikasumiwt" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="sutiwo">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-sutiwo.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              すちを
+            </p>
+            <p class="speaker-id">
+              @sutiwo
+            </p>
+            <p class="speaker-from">サイバーエージェント</p>
+            <p class="speaker-session">
+              <a href="#seminar-b3" class="speaker-label -seminar">セミナー: B3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/sutiwo_" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/sutiwo" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="ahomu">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-ahomu.png">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Ayumu Sato
+            </p>
+            <p class="speaker-id">
+              @ahomu
+            </p>
+            <p class="speaker-from">サイバーエージェント</p>
+            <p class="speaker-session">
+              <a href="#ama-c3-3" class="speaker-label -ama">AMA: C3-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/ahomu" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://aho.mu/" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-website.svg" alt="Website">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="1000ch">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-1000ch.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Sensui Shogo
+            </p>
+            <p class="speaker-id">
+              @1000ch
+            </p>
+            <p class="speaker-from">サイバーエージェント</p>
+            <p class="speaker-session">
+              <a href="#ama-c3-3" class="speaker-label -ama">AMA: C3-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/1000ch" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://1000ch.net" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-website.svg" alt="Website">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="sisidovski">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-sisidovski.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              sisidovski
+            </p>
+            <p class="speaker-id">
+              @sisidovski
+            </p>
+            <p class="speaker-from">日本経済新聞社</p>
+            <p class="speaker-session">
+              <a href="#seminar-a4" class="speaker-label -seminar">セミナー: A4</a>
+              <a href="#ama-c4-1" class="speaker-label -ama">AMA: C4-1</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/sisidovski" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="narirou">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-narirou.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              浜田 真成
+            </p>
+            <p class="speaker-id">
+              @narirou
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#seminar-b4" class="speaker-label -seminar">セミナー: B4</a>
+              <a href="#ama-c4-2" class="speaker-label -ama">AMA: C4-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/narirow" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/narirou" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="ooDEMi">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-ooDEMi.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              新 日出海
+            </p>
+            <p class="speaker-id">
+              @ooDEMi
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#ama-c4-2" class="speaker-label -ama">AMA: C4-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/ooDEMi" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="deytack">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-deytack.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              髙田 健介
+            </p>
+            <p class="speaker-id">
+              @deytack
+            </p>
+            <p class="speaker-from">Yahoo! JAPAN</p>
+            <p class="speaker-session">
+              <a href="#ama-c4-2" class="speaker-label -ama">AMA: C4-2</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/deytack" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="cssradar">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-cssradar.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Yuya Saito
+            </p>
+            <p class="speaker-id">
+              @cssradar
+            </p>
+            <p class="speaker-from">日本経済新聞社</p>
+            <p class="speaker-session">
+              <a href="#ama-c4-1" class="speaker-label -ama">AMA: C4-1</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://twitter.com/cssradar" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-twitter.svg" alt="Twitter">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="ktknest">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-ktknest.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Kato Kenichi
+            </p>
+            <p class="speaker-id">
+              @ktknest
+            </p>
+            <p class="speaker-from">サイバーエージェント</p>
+            <p class="speaker-session">
+              <a href="#ama-c4-3" class="speaker-label -ama">AMA: C4-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://github.com/ktknest" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="kubosho">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-kubosho.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Shota Kubota
+            </p>
+            <p class="speaker-id">
+              @kubosho
+            </p>
+            <p class="speaker-from">サイバーエージェント</p>
+            <p class="speaker-session">
+              <a href="#ama-c4-3" class="speaker-label -ama">AMA: C4-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://github.com/kubosho" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="saneyuki">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-saneyuki.jpg">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Tetsuharu Ohzeki
+            </p>
+            <p class="speaker-id">
+              @saneyuki
+            </p>
+            <p class="speaker-from">AbemaTV</p>
+            <p class="speaker-session">
+              <a href="#seminar-a5" class="speaker-label -seminar">セミナー: A5</a>
+              <a href="#ama-c4-3" class="speaker-label -ama">AMA: C4-3</a>
+            </p>
+            <ul class="speaker-links">
+              <li>
+                <a href="https://github.com/saneyuki" class="speaker-link" target="_blank" rel="noopener">
+                  <img src="./2018/img/ico-github.svg" alt="GitHub">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="speaker" id="oligin020">
+          <div class="speaker-avatar">
+            <img src="./2018/img/pic-oligin020.png">
+          </div>
+          <div class="speaker-profile">
+            <p class="speaker-name">
+              Takanori Sugawara
+            </p>
+            <p class="speaker-id">
+              @oligin020
+            </p>
+            <p class="speaker-from">ファームノート</p>
+            <p class="speaker-session">
+              <a href="#seminar-b5" class="speaker-label -seminar">セミナー: B5</a>
+            </p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="venue" id="venue">
+    <h3 class="venue-title">
+      <img src="./2018/img/hd-venue.svg" alt="会場">
+    </h3>
+    <div class="venue-map" id="map"></div>
+    <div class="venue-data">
+      <h2 class="venue-name">日経カンファレンスルーム
+      </h2>
+      <p class="venue-address">
+        <a href="http://www.nikkei-hall.com/access/" class="header-venueSub" target="_blank" rel="noopener">東京都千代田区大手町1−3−7 日経ビル</a>
+      </p>
+      <ul class="venue-access">
+        <li>東京メトロ千代田線 「大手町駅」神田橋方面改札より徒歩約2分</li>
+        <li>東京メトロ丸ノ内線 「大手町駅」サンケイ前交差点方面改札より徒歩約５分</li>
+        <li>東京メトロ半蔵門線 「大手町駅」皇居方面改札より徒歩約5分</li>
+        <li>東京メトロ東西線 「竹橋駅」4番出口より徒歩約2分</li>
+        <li>都営地下鉄三田線 「大手町駅」大手町方面改札より徒歩約6分</li>
+      </ul>
+      <p class="venue-note">地下鉄「大手町駅」下車C2b出口直結</p>
+    </div>
+  </section>
+
+  <div class="tickets" id="tickets">
+
+    <p class="tickets-button">
+      <span class="button -strike" target="_blank" rel="noopener">Get Your Ticket</span>
+    </p>
+    <p class="tickets-note">
+      本イベントは終了しました。ご来場の皆さまありがとうございました。
+    </p>
+
+    <div class="update">
+      <p class="twitter">
+        <a href="https://twitter.com/insidefrontend" class="twitter-link">
+          Follow us on Twitter
+          <img src="./2018/img/ico-twitter-link.svg" width="16" height="16" class="twitter-icon">
+        </a>
+      </p>
+      <p class="update-note">
+        Twitterの公式アカウントにいて最新情報をお知らせします。
+      </p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="footer">
+    <div class="organizers">
+      <h3 class="organizers-title">
+        <img src="./2018/img/hd-organizers.svg" alt="共催">
+      </h3>
+      <ul class="organizers-list">
+        <li>
+          <a href="https://www.cyberagent.co.jp/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-cyberagent.svg" alt="株式会社サイバーエージェント" class="organizers-logo">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.nikkei.com/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-nikkei.svg" alt="日本経済新聞社" class="organizers-logo">
+          </a>
+        </li>
+        <li>
+          <a href="http://www.yahoo.co.jp/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-yahoo.svg" alt="ヤフー株式会社" class="organizers-logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="sponsors">
+      <h3 class="sponsors-title">
+        <img src="./2018/img/hd-sponsors.svg" alt="スポンサー">
+      </h3>
+      <ul class="sponsors-list">
+        <li>
+          <a href="https://www.fastly.com/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-fastly.png" alt="Fastly" class="sponsors-logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://tmix.jp/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-tmix.png" alt="TMIX（ティーミックス）" class="sponsors-logo">
+          </a>
+        </li>
+        <li>
+          <a href="https://moffers.jp/" target="_blank" rel="noopener">
+            <img src="./2018/img/bnr-moffers.png" alt="moffers（モファーズ）" class="sponsors-logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="contentinfo" role="contentinfo">
+    <div class="links">
+      <ul class="links-list">
+        <li><a href="./2017" target="_blank" rel="noopener">2017</a></li>
+        <li><a href="https://github.com/insidefrontend/issue-1/blob/master/backyard/CODE_OF_CONDUCT.md" target="_blank" rel="noopener">Code of Conduct</a></li>
+        <li><a href="https://scripty.connpass.com/" target="_blank" rel="noopener">SCRIPTY</a></li>
+        <li><a href="https://frontend.connpass.com/" target="_blank" rel="noopener">Frontend Meetup Tokyo</a></li>
+        <li><a href="https://frontrend.connpass.com/" target="_blank" rel="noopener">Frontrend</a></li>
+      </ul>
+    </div>
+    <p class="copyright">© 2018, Inside Frontend</p>
+  </div>
+</footer>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5jzg2a8ShLOEf5L-vWWT8mUD_FU5JLlM"></script>
+<script>
+    function accessMap() {
+        var latLng = new google.maps.LatLng(35.688931, 139.7622484);
+        var mapOptions = {
+            zoom: 16,
+            center: latLng,
+            mapTypeControl: false,
+            streetViewControl: false,
+            scrollwheel: false,
+            draggable: true,
+            mapTypeControlOptions: { mapTypeIds: ["style", google.maps.MapTypeId.ROADMAP] }
+        };
+        var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+        /*アイコン設定*/
+        var markerOptions = {
+            position: latLng,
+            map: map,
+            title: "日経ホール"
+        };
+        var marker = new google.maps.Marker(markerOptions);
+        var styleOptions = [];
+        var styledMapOptions = { name: "Inside Frontend" }
+        var styleType = new google.maps.StyledMapType(styleOptions, styledMapOptions);
+        map.mapTypes.set("style", styleType);
+        map.setMapTypeId("style");
+    };
+    google.maps.event.addDomListener(window, "load", function() {
+        accessMap();
+    });
+
+    window.addEventListener("resize", accessMap);
+</script>
+
+
+</body></html>
