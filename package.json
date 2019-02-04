@@ -1,0 +1,18 @@
+{
+  "name": "inside-frotnend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel *.html -d docs/",
+    "build": "parcel build *.html -d docs/"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0",
+    "postcss-custom-properties": "^8.0.9",
+    "postcss-modules": "^1.4.1"
+  },
+  "dependencies": {
+    "reset-css": "^4.0.1"
+  }
+}
