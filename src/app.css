@@ -80,29 +80,29 @@ img {
   background-color: var(--color-button-bgcolor-hover);
 }
 
-.founders {
+.organizer {
   padding: var(--padding-md);
   background-color: var(--color-white);
   text-transform: uppercase;
 }
 
-.founders-title {
+.organizer-title {
   text-align: center;
   margin-bottom: 1em;
   letter-spacing: var(--font-spacing-md);
   font-size: var(--font-size-md);
 }
 
-.founders-list {
+.organizer-list {
   text-align: center;
 }
 
-.founders-list > * {
+.organizer-list > * {
   margin-bottom: 0.5em;
 }
 
-.founders-banner {
-  width: 220px;
+.organizer-banner {
+  width: 181px  ;
   height: 56px;
 }
 
@@ -160,12 +160,12 @@ img {
     padding: 0.75em 0.5em 0.75em 1em;
   }
 
-  .founders-list {
+  .organizer-list {
     display: flex;
     justify-content: center;
   }
 
-  .founders-list > * {
+  .organizer-list > * {
     margin-bottom: 0;
   }
 
@@ -207,23 +207,23 @@ img {
     border-width: 3px;
   }
 
-  .founders {
+  .organizer {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  .founders-title {
+  .organizer-title {
     margin-bottom: 0;
     letter-spacing: var(--font-spacing-md);
     font-size: var(--font-size-md);
   }
 
-  .founders-list {
+  .organizer-list {
     display: flex;
   }
 
-  .founders-list > * {
+  .organizer-list > * {
     margin-bottom: 0;
   }
 
@@ -260,14 +260,14 @@ img {
     border-width: 3px;
   }
 
-  .founders-title {
+  .organizer-title {
     margin-bottom: 0;
     letter-spacing: var(--font-spacing-md);
     font-size: var(--font-size-md);
   }
 
-  .founders-banner {
-    width: 280px;
+  .organizer-banner {
+    width: 232px;
     height: 72px;
   }
 }
