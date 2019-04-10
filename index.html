@@ -24,41 +24,276 @@
 </head>
 <body>
 
+<header class="header">
+  <nav class="nav">
+    <ul class="nav-list">
+      <li><a href="#speakers">Speakers</a></li>
+      <li><a class="nav-none">Timetable</a></li>
+      <li><a href="#venue">Venue</a></li>
+    </ul>
+  </nav>
+</header>
+
 <main class="main">
-  <div class="title">
-    <h1><span class="highlight">Inside</span> <span class="break"></span><span class="highlight">Frontend#3</span></h1>
-    <p><span class="highlight">May 18th</span></p>
-    <p><span class="highlight">at</span> <span class="break"></span><span class="highlight">Abema</span><span class="break"></span><span class="highlight">-Towers,</span> <span class="break"></span><span class="highlight">Shibuya</span></p>
+
+  <div class="event">
+    <h1 class="event-name">
+      <img src="src/assets/logo.svg" alt="Inside Frontend" class="event-banner">
+    </h1>
+    <div class="event-summary">
+      <p>
+        <time class="event-date">2019-05-18</time>
+        <span class="event-venue">Abema Towers, Shibuya</span>
+      </p>
+    </div>
+    <div class="event-tickets">
+      <a href="https://peatix.com/event/628301" class="Button">Buy Tickets</a>
+    </div>
+
+    <section class="intro">
+      <div class="intro-section">
+        <div class="intro-image">
+          <img src="src/assets/pic-seminar.jpg" alt="2018年のInside Frontend">
+        </div>
+        <div class="intro-content">
+          <h2 class="intro-title">
+            <span>Webフロントエンドの現場と</span>
+            <span>これからをつなぐカンファレンス</span>
+          </h2>
+          <div class="intro-body">
+            <p>Web技術の可能性が広がると共に、Webフロントエンドと呼ばれる領域は多様化しています。さまざまな現場が今どうのような個別の問題に取り組んでいるのか、同時にWebが今後どのように発展していく可能性があるのか、これらを一緒に考えていく場です。</p>
+            <p>本イベントでは、各社の現場で得られたノウハウや、これからの Web 技術について見る、聞く、話すなどして参加者同士の濃いコミュニケーションが生まれることを期待しています。</p>
+          </div>
+        </div>
+      </div>
+      <div class="intro-section">
+        <div class="intro-image">
+          <img src="src/assets/pic-ama.jpg" alt="AMAの様子">
+        </div>
+        <div class="intro-content">
+          <h2 class="intro-title">
+            <span>セミナーとAMA</span>
+            <span>2つのセッション形式</span>
+          </h2>
+          <div class="intro-body">
+            <p>各社のケーススタディの紹介やある分野のスペシャリストによる講演を行うセミナー形式と、特定のテーマについてブースのオーナーと自由に話ができるAMA形式のセッションがあります。
+            </p>
+            <p>※各セッション部屋には十分な席数を用意しますが、混雑時はご協力ください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-  <div class="cfp">
-    <a href="//docs.google.com/forms/d/e/1FAIpQLSdRUeJ7gH46Y2YlOwvKJ51ZikOhq2fNmSXberuplk7P1RnEoA/viewform" class="cfp-link">Call for Proposal</a>
+
+  <section class="speakers Section" id="speakers">
+    <header class="speakers-header Section-header">
+      <h2 class="Heading">Speakers</h2>
+    </header>
+    <div class="speakers-body">
+      <ul class="speakers-list">
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-felixrieseberg.jpg" alt="Felix Riesebergの画像">
+            </a>
+            <p class="speaker-name">Felix Rieseberg</p>
+            <p class="speaker-title">
+              Senior Staff Engineer
+              <span class="speaker-org">at Slack</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-triblondon.jpg" alt="Andrew Bettsの画像">
+            </a>
+            <p class="speaker-name">Andrew Betts</p>
+            <p class="speaker-title">
+              Technical Product Manager
+              <span class="speaker-org">at Fastly</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-kosamari.jpg" alt="Mariko Kosakaの画像">
+            </a>
+            <p class="speaker-name">Mariko Kosaka</p>
+            <p class="speaker-title">
+              Web Engineer
+              <span class="speaker-org">at Google </span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-kgsi.jpg" alt="kgsiの画像">
+            </a>
+            <p class="speaker-name">kgsi</p>
+            <p class="speaker-title">
+              Design Engineer
+              <span class="speaker-org">at SAKURA Internet</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-yayoshi.jpg" alt="Nobuhide Yayoshiの画像">
+            </a>
+            <p class="speaker-name">Nobuhide Yayoshi</p>
+            <p class="speaker-title">
+              Software engineer
+              <span class="speaker-org">at Fast Retailing</span>
+            </p>
+          </div>
+        </li>
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-sadnessOjisan.jpg" alt="sadnessOjisanの画像">
+            </a>
+            <p class="speaker-name">sadnessOjisan</p>
+            <p class="speaker-title">
+              Engineer
+              <span class="speaker-org">at Recruit Lifestyle</span>
+            </p>
+          </div>
+        </li>
+        <!--
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-quramy.jpg" alt="Quramyの画像">
+            </a>
+            <p class="speaker-name">Quramy</p>
+            <p class="speaker-title">
+              Frontend Engineer
+              <span class="speaker-org">at FOLIO</span>
+            </p>
+          </div>
+        </li>
+        -->
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-kubosho.jpg" alt="Shota Kubotaの画像">
+            </a>
+            <p class="speaker-name">Shota Kubota</p>
+            <p class="speaker-title">
+              Frontend Engineer
+              <span class="speaker-org">at AbemaTV</span>
+            </p>
+          </div>
+        </li>
+        <!--
+        <li>
+          <div class="speaker">
+            <a class="speaker-image">
+              <img src="src/assets/speaker-unknown.png" alt="Shinichi Kogaiの画像">
+            </a>
+            <p class="speaker-name">Shinichi Kogai</p>
+            <p class="speaker-title">
+              Frontend Engineer
+              <span class="speaker-org">at Feedforce</span>
+            </p>
+          </div>
+        </li>
+        -->
+      </ul>
+    </div>
+    <p class="speakers-more">
+      and more, TBA soon.
+    </p>
+  </section>
+
+  <!--
+  <section class="timetable Section" id="timetable">
+    <header class="timetable-header Section-header">
+      <h2 class="Heading">Timetable</h2>
+    </header>
+    <div class="timetable-body">
+      <p>TBA</p>
+    </div>
+  </section>
+  -->
+
+  <section class="venue" id="venue">
+    <div class="venue-content Section">
+      <header class="venue-header Section-header">
+        <h2 class="Heading">Venue</h2>
+      </header>
+      <div class="venue-body">
+        <p>
+          <a href="https://goo.gl/maps/VvXotYrYikP2" class="venue-address">東京都渋谷区宇田川町40番1号</a>
+          <span>Abema Towers 10F セミナールーム</span>
+        </p>
+        <p>JR渋谷駅・井の頭線神泉駅より徒歩10分</p>
+      </div>
+    </div>
+    <div class="venue-map">
+      <iframe
+        width="100%"
+        height="240"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ_-VEmb0nroM6xxf_CpzErxL20SMpWRY
+    &q=Abema+Towers">
+      </iframe>
+    </div>
+  </section>
+
+  <div class="closing">
+    <div class="tickets">
+      <p class="tickets-lead">
+        チケットは Peatix でご購入ください
+      </p>
+      <p class="tickets-action">
+        <a href="https://peatix.com/event/628301" class="Button">
+          Buy Tickets
+          <span class="Button-subLabel">at Peatix</span>
+        </a>
+      </p>
+    </div>
+
+    <div class="sponsors Section">
+      <header class="sponsors-header Section-header">
+        <h2 class="Heading">Organizers</h2>
+      </header>
+      <div class="sponsors-body">
+        <ul class="sponsors-list">
+          <li>
+            <div class="sponsor">
+              <a href="https://www.cyberagent.co.jp/"><img src="src/assets/bnr-cyberagent.svg" alt="株式会社サイバーエージェント"></a>
+            </div>
+          </li>
+          <li>
+            <div class="sponsor">
+              <a href="https://www.yahoo.co.jp/"><img src="src/assets/bnr-yahoo.svg" alt="ヤフー株式会社"></a>
+            </div>
+          </li>
+        </ul>
+        <!--<h3 class="SubHeading">& Orgnizers</h3>-->
+      </div>
+    </div>
   </div>
+
 </main>
 
-<section class="organizer">
-  <h2 class="organizer-title">Organizers</h2>
-  <ul class="organizer-list">
-    <li>
-      <a href="https://www.cyberagent.co.jp/">
-        <img src="./src/assets/bnr-cyberagent.svg" class="organizer-banner" alt="CyberAgent, Inc.">
-      </a>
-    </li>
-    <li>
-      <a href="https://www.yahoo.co.jp/">
-        <img src="./src/assets/bnr-yahoo.svg" class="organizer-banner" alt="Yahoo Japan Corporation.">
-      </a>
-    </li>
-  </ul>
-</section>
-
 <footer class="footer">
-  <ul class="footer-nav">
-    <li><a href="//github.com/insidefrontend/issue-1/blob/master/backyard/CODE_OF_CONDUCT.md">Code of Conduct</a></li>
-    <li><a href="/2018">2018</a></li>
-    <li><a href="/2017">2017</a></li>
-  </ul>
-  <p class="copyright">
-    <small>©2019, Inside Frontend</small>
+  <div class="footer-achives">
+    <ul class="footer-links">
+      <li>
+        <a href="https://github.com/insidefrontend/issue-1/blob/master/backyard/CODE_OF_CONDUCT.md">Code Of Conduct</a>
+      </li>
+      <li><a href="/2018">2018</a></li>
+      <li><a href="/2017">2017</a></li>
+    </ul>
+  </div>
+  <p class="footer-copyright">
+    © 2019, Inside Frontend
   </p>
 </footer>
 

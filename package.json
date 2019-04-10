@@ -8,9 +8,11 @@
     "build": "parcel build *.html -d docs/"
   },
   "devDependencies": {
+    "eslint": "^5.15.3",
     "parcel-bundler": "^1.11.0",
     "postcss-custom-properties": "^8.0.9",
-    "postcss-modules": "^1.4.1"
+    "postcss-modules": "^1.4.1",
+    "stylelint": "^9.10.1"
   },
   "dependencies": {
     "reset-css": "^4.0.1"
