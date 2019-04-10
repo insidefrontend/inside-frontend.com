@@ -253,6 +253,7 @@ img, svg, iframe {
   font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
+  letter-spacing: 0.1em;
 }
 
 .nav-list a:hover {
@@ -317,6 +318,7 @@ img, svg, iframe {
   font-family: var(--font-family-en);
   color: #FFFFFC;
   color: var(--color-grayscale-100);
+  letter-spacing: 0.1em;
 }
 
 .event-date {
