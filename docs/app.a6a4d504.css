@@ -306,6 +306,10 @@ img, svg, iframe {
 .event-summary {
   margin-bottom: 24px;
   margin-bottom: var(--spacing-3x);
+  padding-left: 16px;
+  padding-left: var(--spacing-2x);
+  padding-right: 16px;
+  padding-right: var(--spacing-2x);
   text-align: center;
   font-size: 1.25rem;
   font-size: var(--font-size-lg);
