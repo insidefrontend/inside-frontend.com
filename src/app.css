@@ -609,6 +609,31 @@ img, svg, iframe {
   display: block;
 }
 
+.speaker-session {
+  margin-top: var(--spacing-1x);
+  margin-bottom: var(--spacing-1x);
+  padding-left: var(--spacing-1x);
+  padding-right: var(--spacing-1x);
+  color: var(--color-seminar); /* todo: delete temp color */
+}
+
+.speaker-session > span {
+  display: inline;
+  /*background-color: var(--color-accent);*/
+  font-weight: bold;
+  quotes: "“" "”" "‘" "’";
+}
+
+.speaker-session > span::before {
+  display: inline;
+  content: open-quote;
+}
+
+.speaker-session > span::after {
+  display: inline;
+  content: close-quote;
+}
+
 @media (min-width: 600px) {
   .speaker-image {
     width: 160px;
