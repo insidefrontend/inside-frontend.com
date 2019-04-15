@@ -1,0 +1,207 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Inside Frontend | 2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催
+    meta(name='description' content='2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='twitter:title' content='Inside Frontend #3')
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:url' content='https://inside-frontend.com/')
+    meta(name='twitter:site' content='@insidefrontend')
+    meta(name='twitter:image' content='https://inside-frontend.com/stat/ogimage.png')
+    meta(name='twitter:description' content='Web フロントエンドの現場とこれからをつなぐカンファレンス')
+    meta(property='og:title' content='Inside Frontend #3')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='https://inside-frontend.com/')
+    meta(property='og:image' content='https://inside-frontend.com/stat/ogimage.png')
+    meta(property='og:description' content='Web フロントエンドの現場とこれからをつなぐカンファレンス')
+    link(rel='apple-touch-icon' sizes='180x180' href='src/assets/icons/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='src/assets/icons/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='src/assets/icons/favicon-16x16.png')
+    link(rel='manifest' href='https://inside-frontend.com/stat/icons/site.webmanifest')
+    link(rel='mask-icon' href='src/assets/icons/safari-pinned-tab.svg' color='#27262e')
+    meta(name='msapplication-TileColor' content='#27262e')
+    meta(name='theme-color' content='#27262e')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet')
+header.header
+    nav.nav
+        ul.nav-list
+            li
+                a(href='#speakers') Speakers
+            li
+                a.nav-none Timetable
+            li
+                a(href='#venue') Venue
+main.main
+    .event
+        h1.event-name
+            img.event-banner(src='src/assets/logo.svg' alt='Inside Frontend')
+        .event-summary
+            p
+                time.event-date 2019-05-18
+                span.event-venue Abema Towers, Shibuya
+        .event-tickets
+            a.Button(href='https://inside-frontend-3.peatix.com/') Buy Tickets
+        section.intro
+            .intro-section
+                .intro-image
+                    img(src='src/assets/pic-seminar.jpg' alt='2018年のInside Frontend')
+                .intro-content
+                    h2.intro-title
+                        span Webフロントエンドの現場と
+                        span これからをつなぐカンファレンス
+                    .intro-body
+                        p Web技術の可能性が広がると共に、Webフロントエンドと呼ばれる領域は多様化しています。さまざまな現場が今どうのような個別の問題に取り組んでいるのか、同時にWebが今後どのように発展していく可能性があるのか、これらを一緒に考えていく場です。
+                        p 本イベントでは、各社の現場で得られたノウハウや、これからの Web 技術について見る、聞く、話すなどして参加者同士の濃いコミュニケーションが生まれることを期待しています。
+            .intro-section
+                .intro-image
+                    img(src='src/assets/pic-ama.jpg' alt='AMAの様子')
+                .intro-content
+                    h2.intro-title
+                        span セミナーとAMA
+                        span 2つのセッション形式
+                    .intro-body
+                        p 各社のケーススタディの紹介やある分野のスペシャリストによる講演を行うセミナー形式と、特定のテーマについてブースのオーナーと話ができるAMA形式のセッションがあります。
+                        p ※各セッション部屋には十分な席数を用意しますが、混雑時はご協力ください。
+    section#speakers.speakers.Section
+        header.speakers-header.Section-header
+            h2.Heading Speakers
+        .speakers-body
+            include includes/speakers
+
+            ul.speakers-list
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-felixrieseberg.jpg' alt='Felix Riesebergの画像')
+                        p.speaker-name Felix Rieseberg
+                        p.speaker-title
+                            | Senior Staff Engineer
+                            span.speaker-org at Slack
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-triblondon.jpg' alt='Andrew Bettsの画像')
+                        p.speaker-name Andrew Betts
+                        p.speaker-title
+                            | Technical Product Manager
+                            span.speaker-org at Fastly
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-kosamari.jpg' alt='Mariko Kosakaの画像')
+                        p.speaker-name Mariko Kosaka
+                        p.speaker-title
+                            | Web Engineer
+                            span.speaker-org at Google
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-kgsi.jpg' alt='Shinichi Kogisoの画像')
+                        p.speaker-name Shinichi Kogiso
+                        p.speaker-title
+                            | Design Engineer
+                            span.speaker-org at SAKURA Internet
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-yayoshi.jpg' alt='Nobuhide Yayoshiの画像')
+                        p.speaker-name Nobuhide Yayoshi
+                        p.speaker-title
+                            | Software engineer
+                            span.speaker-org at Fast Retailing
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-quramy.jpg' alt='Yosuke Kuramiの画像')
+                        p.speaker-name Yosuke Kurami
+                        p.speaker-title
+                            | Frontend Engineer
+                            span.speaker-org at FOLIO
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-sadnessOjisan.jpg' alt='Yuta Ideの画像')
+                        p.speaker-name Yuta Ide
+                        p.speaker-title
+                            | Web Engineer
+                            span.speaker-org at Recruit Lifestyle
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-kubosho.jpg' alt='Shota Kubotaの画像')
+                        p.speaker-name Shota Kubota
+                        p.speaker-title
+                            | Frontend Engineer
+                            span.speaker-org at AbemaTV
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-herablog.jpg' alt='Kazunari Haraの画像')
+                        p.speaker-name Kazunari Hara
+                        p.speaker-title
+                            | Web Developer
+                            span.speaker-org at CyberAgent
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-toki.jpg' alt='Toki Marinaの画像')
+                        p.speaker-name Toki Marina
+                        p.speaker-title
+                            | Frontend Engineer
+                            span.speaker-org at CyberAgent
+                li
+                    .speaker
+                        a.speaker-image
+                            img(src='src/assets/speaker-wadackel.jpg' alt='Tsuyoshi Wadaの画像')
+                        p.speaker-name Tsuyoshi Wada
+                        p.speaker-title
+                            | Frontend Engineer
+                            span.speaker-org at CyberAgent
+        p.speakers-more
+            | and more.
+    section#venue.venue
+        .venue-content.Section
+            header.venue-header.Section-header
+                h2.Heading Venue
+            .venue-body
+                p
+                    a.venue-address(href='https://goo.gl/maps/VvXotYrYikP2') 東京都渋谷区宇田川町40番1号
+                    span Abema Towers 10F セミナールーム
+                p JR渋谷駅・井の頭線神泉駅より徒歩10分
+        .venue-map
+            iframe(width='100%' height='240' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ_-VEmb0nroM6xxf_CpzErxL20SMpWRY\
+      &q=Abema+Towers')
+    .closing
+        .tickets
+            p.tickets-lead チケットは Peatix でご購入ください
+            p.tickets-action
+                a.Button(href='https://inside-frontend-3.peatix.com/')
+                    | Buy Tickets
+                    span.Button-subLabel at Peatix
+        .sponsors.Section
+            header.sponsors-header.Section-header
+                h2.Heading Organizers
+            .sponsors-body
+                ul.sponsors-list
+                    li
+                        .sponsor
+                            a(href='https://www.cyberagent.co.jp/')
+                                img(src='src/assets/bnr-cyberagent.svg' alt='株式会社サイバーエージェント')
+                    li
+                        .sponsor
+                            a(href='https://www.yahoo.co.jp/')
+                                img(src='src/assets/bnr-yahoo.svg' alt='ヤフー株式会社')
+                // <h3 class="SubHeading">& Orgnizers</h3>
+footer.footer
+    .footer-achives
+        ul.footer-links
+            li
+                a(href='https://github.com/insidefrontend/issue-1/blob/master/backyard/CODE_OF_CONDUCT.md') Code Of Conduct
+            li
+                a(href='/2018') 2018
+            li
+                a(href='/2017') 2017
+    p.footer-copyright
+        | &copy; 2019, Inside Frontend
+script(src='./src/app.js')
