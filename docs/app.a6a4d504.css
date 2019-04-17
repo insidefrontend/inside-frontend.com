@@ -115,9 +115,6 @@ html {
   background-color: var(--color-dark);
   color: #FFFFFC;
   color: var(--color-grayscale-100);
-
-  -webkit-scroll-behavior:smooth;
-  scroll-behavior:smooth;
 }
 
 body {
