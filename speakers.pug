@@ -1,0 +1,150 @@
+doctype html
+head
+    meta(charset='utf-8')
+    title Speakers | Inside Frontend | 2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催
+    meta(name='description' content='2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    meta(name='twitter:title' content='Inside Frontend #3')
+    meta(name='twitter:card' content='summary_large_image')
+    meta(name='twitter:url' content='https://inside-frontend.com/')
+    meta(name='twitter:site' content='@insidefrontend')
+    meta(name='twitter:image' content='https://inside-frontend.com/stat/ogimage.png')
+    meta(name='twitter:description' content='Web フロントエンドの現場とこれからをつなぐカンファレンス')
+    meta(property='og:title' content='Inside Frontend #3')
+    meta(property='og:type' content='website')
+    meta(property='og:url' content='https://inside-frontend.com/')
+    meta(property='og:image' content='https://inside-frontend.com/stat/ogimage.png')
+    meta(property='og:description' content='Web フロントエンドの現場とこれからをつなぐカンファレンス')
+    link(rel='apple-touch-icon' sizes='180x180' href='/src/assets/icons/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='/src/assets/icons/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='/src/assets/icons/favicon-16x16.png')
+    link(rel='manifest' href='https://inside-frontend.com/stat/icons/site.webmanifest')
+    link(rel='mask-icon' href='/src/assets/icons/safari-pinned-tab.svg' color='#27262e')
+    meta(name='msapplication-TileColor' content='#27262e')
+    meta(name='theme-color' content='#27262e')
+    link(href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet')
+
+include ./includes/speakersData
+
+header.header
+    nav.nav
+        ul.nav-list
+            li
+                a(href='./#speakers') Speakers
+            li
+                a.nav-none Timetable
+            li
+                a(href='./#venue') Venue
+main.main
+
+    p.sitename
+        a(href="./index")
+            img.sitename-banner(src='/src/assets/logo-horizontal.svg' alt='Inside Frontend')
+
+    section#sessions.sessions.Section
+        header.sessions-header.Section-header
+            h1.Heading Speakers
+        .sessions-body
+            include ./includes/sessions
+
+            ul.sessions-list
+                for speaker in speakers
+                    +sessions(speaker)
+                .session#ameba
+                    .session-speaker
+                        .speaker
+                            .speaker-image
+                                img(src="/src/assets/speaker-herablog.jpg" alt="Kazunari Haraの画像")
+                            .speaker-body
+                                p.speaker-name Kazunari Hara
+                                p.speaker-title Web Developers
+                                    span.speaker-org at CyberAgent
+                                p.speaker-url
+                                    span Twitter:
+                                    a(href="//twitter.com/herablog") herablog
+                                p.speaker-url
+                                    span GitHub:
+                                    a(href="//github.com/herablog") herablog
+                        .speaker
+                            .speaker-image
+                                img(src="/src/assets/speaker-tokimari.jpg" alt="Marina Tokiの画像")
+                            .speaker-body
+                                p.speaker-name Marina Toki
+                                p.speaker-title Frontend Engineer
+                                    span.speaker-org at CyberAgent
+                                p.speaker-url
+                                    span Twitter:
+                                    a(href="//twitter.com/tokimariri") tokimariri
+                                p.speaker-url
+                                    span GitHub:
+                                    a(href="//github.com/tokimari") tokimari
+                    .session-body
+                        .session-title
+                            span Web App Checklist ~高品質のWebアプリケーションをつくるために~
+                        .session-summary 高品質のWebアプリケーションをつくるためには、ユーザーインターフェイス、パフォーマンス、アクセシビリティ、セキュリティ、ネットワーク、開発体験など様々な要素を適切に組み合わせなければなりません。Amebaの新機能である「こえのブログ」ではそれらを満たすためにどのように開発していったのか、チェックリスト形式でお伝えします。
+                .session#cats
+                    .session-speaker
+                        .speaker
+                            .speaker-image
+                                img(src="/src/assets/speaker-wadackel.jpg" alt="Tsuyoshi Wadaの画像")
+                            .speaker-body
+                                p.speaker-name Tsuyoshi Wada
+                                p.speaker-title Frontend Engineer
+                                    span.speaker-org at CyberAgent
+                                p.speaker-url
+                                    span Twitter:
+                                    a(href="//twitter.com/wadackel") wadackel
+                                p.speaker-url
+                                    span GitHub:
+                                    a(href="//github.com/tsuyoshiwada") tsuyoshiwada
+                        .speaker
+                            .speaker-image
+                                img(src="/src/assets/speaker-masuP9.jpg" alt="Soichi Masudaの画像")
+                            .speaker-body
+                                p.speaker-name Soichi Masuda
+                                p.speaker-title Web Accessibility Expert
+                                    span.speaker-org at CyberAgent
+                                p.speaker-url
+                                    span Twitter:
+                                    a(href="//twitter.com/masuP9") masuP9
+                                p.speaker-url
+                                    span GitHub:
+                                    a(href="//github.com/masuP9") masuP9
+                    .session-body
+                        .session-title
+                            span Web App Checklist ~高品質のWebアプリケーションをつくるために~
+                        .session-summary 高品質のWebアプリケーションをつくるためには、ユーザーインターフェイス、パフォーマンス、アクセシビリティ、セキュリティ、ネットワーク、開発体験など様々な要素を適切に組み合わせなければなりません。Amebaの新機能である「こえのブログ」ではそれらを満たすためにどのように開発していったのか、チェックリスト形式でお伝えします。
+
+    .closing
+        .tickets
+            p.tickets-lead チケットは Peatix でご購入ください
+            p.tickets-action
+                a.Button(href='https://inside-frontend-3.peatix.com/')
+                    | Buy Tickets
+                    span.Button-subLabel at Peatix
+        .sponsors.Section
+            header.sponsors-header.Section-header
+                h2.Heading Organizers
+            .sponsors-body
+                ul.sponsors-list
+                    li
+                        .sponsor
+                            a(href='https://www.cyberagent.co.jp/')
+                                img(src='/src/assets/bnr-cyberagent.svg' alt='株式会社サイバーエージェント')
+                    li
+                        .sponsor
+                            a(href='https://www.yahoo.co.jp/')
+                                img(src='/src/assets/bnr-yahoo.svg' alt='ヤフー株式会社')
+                // <h3 class="SubHeading">& Orgnizers</h3>
+footer.footer
+    .footer-achives
+        ul.footer-links
+            li
+                a(href='https://github.com/insidefrontend/issue-1/blob/master/backyard/CODE_OF_CONDUCT.md') Code Of Conduct
+            li
+                a(href='/2018') 2018
+            li
+                a(href='/2017') 2017
+    p.footer-copyright
+        | &copy; 2019, Inside Frontend
+script(src='./src/speakers.js')
