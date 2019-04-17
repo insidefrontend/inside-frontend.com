@@ -1,5 +1,3 @@
-include speakersData
-
 mixin speakers(speaker)
   li
     .speaker
@@ -8,7 +6,3 @@ mixin speakers(speaker)
       p.speaker-name= speaker.name
       p.speaker-title= speaker.job
         span.speaker-org= `at ${speaker.org}`
-
-ul.speakers-list
-  for speaker in speakers
-    +speakers(speaker)

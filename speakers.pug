@@ -1,7 +1,7 @@
 doctype html
 head
     meta(charset='utf-8')
-    title Inside Frontend | 2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催
+    title Speakers | Inside Frontend | 2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催
     meta(name='description' content='2019年5月18日 Frontendカンファレンスを渋谷Abema Towersで開催')
     meta(name='viewport' content='width=device-width, initial-scale=1')
     meta(name='twitter:title' content='Inside Frontend #3')
@@ -15,11 +15,11 @@ head
     meta(property='og:url' content='https://inside-frontend.com/')
     meta(property='og:image' content='https://inside-frontend.com/stat/ogimage.png')
     meta(property='og:description' content='Web フロントエンドの現場とこれからをつなぐカンファレンス')
-    link(rel='apple-touch-icon' sizes='180x180' href='/src/assets/icons/apple-touch-icon.png')
-    link(rel='icon' type='image/png' sizes='32x32' href='/src/assets/icons/favicon-32x32.png')
-    link(rel='icon' type='image/png' sizes='16x16' href='/src/assets/icons/favicon-16x16.png')
+    link(rel='apple-touch-icon' sizes='180x180' href='src/assets/icons/apple-touch-icon.png')
+    link(rel='icon' type='image/png' sizes='32x32' href='src/assets/icons/favicon-32x32.png')
+    link(rel='icon' type='image/png' sizes='16x16' href='src/assets/icons/favicon-16x16.png')
     link(rel='manifest' href='https://inside-frontend.com/stat/icons/site.webmanifest')
-    link(rel='mask-icon' href='/src/assets/icons/safari-pinned-tab.svg' color='#27262e')
+    link(rel='mask-icon' href='src/assets/icons/safari-pinned-tab.svg' color='#27262e')
     meta(name='msapplication-TileColor' content='#27262e')
     meta(name='theme-color' content='#27262e')
     link(href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet')
@@ -38,7 +38,7 @@ header.header
 main.main
     .event
         h1.event-name
-            img.event-banner(src='/src/assets/logo.svg' alt='Inside Frontend')
+            img.event-banner(src='src/assets/logo.svg' alt='Inside Frontend')
         .event-summary
             p
                 time.event-date 2019-05-18
@@ -48,7 +48,7 @@ main.main
         section.intro
             .intro-section
                 .intro-image
-                    img(src='/src/assets/pic-seminar.jpg' alt='2018年のInside Frontend')
+                    img(src='src/assets/pic-seminar.jpg' alt='2018年のInside Frontend')
                 .intro-content
                     h2.intro-title
                         span Webフロントエンドの現場と
@@ -58,7 +58,7 @@ main.main
                         p 本イベントでは、各社の現場で得られたノウハウや、これからの Web 技術について見る、聞く、話すなどして参加者同士の濃いコミュニケーションが生まれることを期待しています。
             .intro-section
                 .intro-image
-                    img(src='/src/assets/pic-ama.jpg' alt='AMAの様子')
+                    img(src='src/assets/pic-ama.jpg' alt='AMAの様子')
                 .intro-content
                     h2.intro-title
                         span セミナーとAMA
@@ -66,32 +66,16 @@ main.main
                     .intro-body
                         p 各社のケーススタディの紹介やある分野のスペシャリストによる講演を行うセミナー形式と、特定のテーマについてブースのオーナーと話ができるAMA形式のセッションがあります。
                         p ※各セッション部屋には十分な席数を用意しますが、混雑時はご協力ください。
-
-    section#speakers.speakers.Section
-        header.speakers-header.Section-header
+    section#sessions.sessions.Section
+        header.sessions-header.Section-header
             h2.Heading Speakers
-        .speakers-body
-            include ./includes/speakers
+        .sessions-body
+            include ./includes/sessions
 
-            ul.speakers-list
+            ul.sessions-list
                 for speaker in speakers
-                    +speakers(speaker)
+                    +sessions(speaker)
 
-        p.speakers-more
-            | and more.
-
-    section#venue.venue
-        .venue-content.Section
-            header.venue-header.Section-header
-                h2.Heading Venue
-            .venue-body
-                p
-                    a.venue-address(href='https://goo.gl/maps/VvXotYrYikP2') 東京都渋谷区宇田川町40番1号
-                    span Abema Towers 10F セミナールーム
-                p JR渋谷駅・井の頭線神泉駅より徒歩10分
-        .venue-map
-            iframe(width='100%' height='240' frameborder='0' style='border:0' src='https://www.google.com/maps/embed/v1/place?key=AIzaSyCJ_-VEmb0nroM6xxf_CpzErxL20SMpWRY\
-      &q=Abema+Towers')
     .closing
         .tickets
             p.tickets-lead チケットは Peatix でご購入ください
@@ -107,11 +91,11 @@ main.main
                     li
                         .sponsor
                             a(href='https://www.cyberagent.co.jp/')
-                                img(src='/src/assets/bnr-cyberagent.svg' alt='株式会社サイバーエージェント')
+                                img(src='src/assets/bnr-cyberagent.svg' alt='株式会社サイバーエージェント')
                     li
                         .sponsor
                             a(href='https://www.yahoo.co.jp/')
-                                img(src='/src/assets/bnr-yahoo.svg' alt='ヤフー株式会社')
+                                img(src='src/assets/bnr-yahoo.svg' alt='ヤフー株式会社')
                 // <h3 class="SubHeading">& Orgnizers</h3>
 footer.footer
     .footer-achives
@@ -124,4 +108,4 @@ footer.footer
                 a(href='/2017') 2017
     p.footer-copyright
         | &copy; 2019, Inside Frontend
-script(src='./src/app.js')
+script(src='/src/app.js')
