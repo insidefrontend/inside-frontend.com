@@ -61,9 +61,6 @@
 html {
   background-color: var(--color-dark);
   color: var(--color-grayscale-100);
-
-  -webkit-scroll-behavior:smooth;
-  scroll-behavior:smooth;
 }
 
 body {
