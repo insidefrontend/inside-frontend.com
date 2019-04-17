@@ -648,12 +648,12 @@ background-size: 160px;
   z-index: 3;
   transition: filter 300ms ease-out;
   filter: grayscale(100%);
+  transform: translateZ(0); /* fix: chrome mix-blend-mode bug */
 }
 
 @supports (mix-blend-mode: exclusion) {
   .speaker-image > img {
     mix-blend-mode: exclusion;
-    filter: grayscale(100%) contrast(1.3);
   }
 }
 
