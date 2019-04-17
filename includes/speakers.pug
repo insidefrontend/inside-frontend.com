@@ -1,7 +1,7 @@
 mixin speakers(speaker)
   li
     .speaker
-      a(href=`speakers${speaker.session_url}`).speaker-image
+      a(href=`speakers#${speaker.session_anchor}`).speaker-image
         img(src=speaker.image alt='Felix Riesebergの画像')
       p.speaker-name= speaker.name
       p.speaker-title= speaker.job

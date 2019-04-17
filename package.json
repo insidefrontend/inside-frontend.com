@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "parcel *.html -d docs/",
-    "build": "parcel build *.html -d docs/"
+    "start": "parcel *.pug -d docs/",
+    "build": "parcel build *.pug -d docs/"
   },
   "devDependencies": {
     "eslint": "^5.15.3",

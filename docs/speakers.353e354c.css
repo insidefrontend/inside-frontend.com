@@ -115,6 +115,9 @@ html {
   background-color: var(--color-dark);
   color: #FFFFFC;
   color: var(--color-grayscale-100);
+
+  -webkit-scroll-behavior:smooth;
+  scroll-behavior:smooth;
 }
 
 body {
@@ -904,6 +907,8 @@ background-size: 160px;
 /* Session */
 
 .session {
+  scroll-margin-top: 48px;
+  scroll-margin-top: var(--spacing-6x);
   padding-left: 16px;
   padding-left: var(--spacing-2x);
   padding-right: 16px;
