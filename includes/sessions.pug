@@ -1,0 +1,25 @@
+mixin sessions(speaker)
+  if speaker.solo
+    li
+      .session(id=speaker.session_url)
+        .session-speaker
+          .speaker
+            .speaker-image
+              img(src=speaker.image alt=`${speaker.name}の画像`)
+            .speaker-body
+              p.speaker-name= speaker.name
+              p.speaker-title
+                span.speaker-job= speaker.job
+                span.speaker-org= `at ${speaker.org}`
+              if speaker.twitter
+                p.speaker-url
+                  span Twitter:
+                  a(href=`//twitter.com/${speaker.twitter}`)= speaker.twitter
+              if speaker.github
+                p.speaker-url
+                  span GitHub:
+                  a(href=`//github.com/${speaker.github}`)= speaker.github
+        .session-body
+          .session-title
+            span= speaker.session_title
+          .session-summary= speaker.session_summary
