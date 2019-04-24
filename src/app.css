@@ -288,11 +288,16 @@ img, svg, iframe {
 }
 
 .event-date {
-  display: inline-block;
+  display: block;
 }
 
 .event-venue {
-  display: inline-block;
+  display: block;
+}
+
+.event-time {
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
 }
 
 .event-tickets {
@@ -354,6 +359,10 @@ img, svg, iframe {
 
   .event-summary {
     font-size: var(--font-size-xl);
+  }
+
+  .event-time {
+    font-size: var(--font-size-lg);
   }
 }
 
