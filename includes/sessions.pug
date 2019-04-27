@@ -22,4 +22,4 @@ mixin sessions(speaker)
         .session-body
           .session-title
             span= speaker.session_title
-          .session-summary= speaker.session_summary
+          .session-summary !{speaker.session_summary.replace(/\r?\n|\r/g,"<br>")}
