@@ -57,12 +57,13 @@ table {
   --color-secondary-highlight: #FAD64D;
   --color-accent: #FAD64D;
   --color-accent-highlight: #FED430;
-  --color-seminar: #E46978;
+  --color-seminar: #c14f5d;
   --color-seminar-highlight: #EB7A88;
-  --color-ama: #3FEBCB;
+  --color-ama: #337d6f;
   --color-ama-highlight: #6BF0D7;
   --color-grayscale-100: #FFFFFC;
   --color-grayscale-200: #FFFADE;
+  --color-grayscale-800: #545165;
 
   --color-dark: var(--color-primary);
   --color-dark-invert: var(--color-grayscale-100);
@@ -228,6 +229,33 @@ img, svg, iframe {
   }
 }
 
+/* Tag */
+.Tag {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 8px;
+  padding: 0 var(--spacing-1x);
+  font-size: 0.875em;
+  font-size: var(--font-size-sm);
+  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-family-en);
+  text-transform: uppercase;
+}
+
+.Tag.-seminar {
+  background-color: #c14f5d;
+  background-color: var(--color-seminar);
+  color: #FFFFFC;
+  color: var(--color-grayscale-100);
+}
+
+.Tag.-ama {
+  background-color: #337d6f;
+  background-color: var(--color-ama);
+  color: #FFFFFC;
+  color: var(--color-grayscale-100);
+}
+
 /* Header */
 
 .header {
@@ -235,8 +263,6 @@ img, svg, iframe {
   top: 0;
   left: 0;
   right: 0;
-  /*padding-top: var(--spacing-12x);*/
-  /*padding-bottom: var(--spacing-2x);*/
 }
 
 @media (min-width: 840px) {
@@ -877,16 +903,6 @@ background-size: 160px;
   }
 }
 
-@media (min-width: 1280px) {
-  .speakers-list {
-    max-width: 1152px;
-  }
-
-  .speakers-list > * {
-    flex: 0 0 calc(100% / 4);
-  }
-}
-
 /* Sessions */
 
 .sessions-list > * {
@@ -907,11 +923,229 @@ background-size: 160px;
   }
 }
 
-/*@media (min-width: 1280px) {*/
-  /*.sessions-list {*/
-    /*max-width: 1152px;*/
-  /*}*/
-/*}*/
+/* Timetable */
+
+.timetable {
+  /*background-image: url(assets/6.jpg);*/
+  background-size: 1024px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /*background-color: var(--color-dark);*/
+  /*color: var(--color-dark-invert);*/
+}
+
+.timetable-table {
+  position: relative;
+}
+
+.timetable-table::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  margin: auto;
+  width: 4px;
+  height: 100%;
+  background-color: #545165;
+  background-color: var(--color-grayscale-800);
+}
+
+.timetable-time {
+  margin-top: 16px;
+  margin-top: var(--spacing-2x);
+  padding: 8px;
+  padding: var(--spacing-1x);
+  background-color: #27262E;
+  background-color: var(--color-dark);
+  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-family-en);
+  font-weight: bold;
+  text-align: center;
+}
+
+.timetable-time:first-child {
+  margin-top: 0;
+}
+
+.timetable-item {
+  margin-left: 16px;
+  margin-left: var(--spacing-2x);
+  margin-right: 16px;
+  margin-right: var(--spacing-2x);
+  padding-bottom: 16px;
+  padding-bottom: var(--spacing-2x);
+  background-color: #27262E;
+  background-color: var(--color-dark);
+  text-align: center;
+}
+
+.timetable-session {
+  border-radius: 3px;
+  padding: 8px;
+  padding: var(--spacing-1x);
+  background-color: #2F2E38;
+  background-color: var(--color-primary-highlight);
+  color: #FFFFFC;
+  color: var(--color-grayscale-100);
+  font-family: 'Roboto Mono', monospace;
+  font-family: var(--font-family-en);
+}
+
+.timetable-label {
+  margin-bottom: 4px;
+}
+
+.timetable-title {
+  font-weight: bold;
+  color: #DEC669;
+  color: var(--color-secondary);
+}
+
+.timetable-title a {
+  color: inherit;
+}
+
+.timetable-title a:hover {
+  text-decoration: none;
+}
+
+.timetable-speaker {
+  font-size: 0.875em;
+  font-size: var(--font-size-sm);
+}
+
+.timetable-speaker > span {
+  display: inline-block;
+}
+
+.timetable-speaker > span + span {
+  margin-left: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .timetable {
+    max-width: 848px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .timetable {
+    background-size: 100%;
+  }
+
+  .timetable-header {
+    margin-bottom: 64px;
+    margin-bottom: var(--spacing-8x);
+  }
+
+  .timetable-item {
+    display: flex;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .timetable-item > * {
+    flex: 1 1 calc(100% / 3);
+    min-width: 0;
+  }
+
+  .timetable-session {
+    padding: 16px;
+    padding: var(--spacing-2x);
+  }
+
+  .timetable-session +  .timetable-session{
+    margin-left: 16px;
+    margin-left: var(--spacing-2x);
+  }
+
+  .timetable-label {
+    margin-bottom: 8px;
+    margin-bottom: var(--spacing-1x);
+  }
+
+  .timetable-title {
+    margin-bottom: 4px;
+  }
+
+  .timetable-ama {
+    display: flex;
+    justify-content: center;
+  }
+
+  .timetable-ama > * {
+    flex: 0 0 calc(100% / 3);
+    min-width: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .timetable {
+    max-width: 1152px;
+    background-size: auto 2048px;
+    background-position: left top;
+  }
+
+  .timetable-table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .timetable-table::before {
+    content: none;
+  }
+
+  .timetable-time {
+    position: relative;
+    flex: 0 0 120px;
+    margin-top: 0;
+    padding: 16px;
+    padding: var(--spacing-2x);
+    width: 120px;
+    background-color: transparent;
+  }
+
+  .timetable-time::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: auto;
+    width: 4px;
+    height: 100%;
+    background-color: #545165;
+    background-color: var(--color-grayscale-800);
+  }
+
+  .timetable-time:first-of-type::before {
+    top: 100%;
+  }
+
+  .timetable-time:last-of-type::before {
+    bottom: 100%;
+  }
+
+  .timetable-time > span {
+    padding: 16px;
+    padding: var(--spacing-2x);
+    background-color: #27262E;
+    background-color: var(--color-primary);
+  }
+
+  .timetable-item {
+    flex: 1 0 calc(100% - 120px);
+    min-width: 0;
+  }
+}
 
 /* Session */
 
@@ -1086,27 +1320,6 @@ background-size: 160px;
     font-size: var(--font-size-xl);
   }
 }
-
-
-/* Timetable */
-
-.timetable {
-  background-image: url(3.9d3bc06a.jpg);
-  background-size: 1024px;
-  background-position: center top;
-  background-color: #27262E;
-  background-color: var(--color-dark);
-  background-repeat: no-repeat;
-  color: #FFFFFC;
-  color: var(--color-dark-invert);
-}
-
-@media (min-width: 1024px) {
-  .timetable {
-    background-size: 100%;
-  }
-}
-
 
 /* Venue */
 

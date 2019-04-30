@@ -182,7 +182,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets/1.jpg":[["1.9f6060a0.jpg","src/assets/1.jpg"],"src/assets/1.jpg"],"./assets/halftone-light.png":[["halftone-light.e1ed191e.png","src/assets/halftone-light.png"],"src/assets/halftone-light.png"],"./assets/4.jpg":[["4.d9e45535.jpg","src/assets/4.jpg"],"src/assets/4.jpg"],"./assets/3.jpg":[["3.9d3bc06a.jpg","src/assets/3.jpg"],"src/assets/3.jpg"],"./assets/abematowers.jpg":[["abematowers.7abc3762.jpg","src/assets/abematowers.jpg"],"src/assets/abematowers.jpg"],"./assets/7.jpg":[["7.d587cb86.jpg","src/assets/7.jpg"],"src/assets/7.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/speakers.js":[function(require,module,exports) {
+},{"./assets/1.jpg":[["1.9f6060a0.jpg","src/assets/1.jpg"],"src/assets/1.jpg"],"./assets/halftone-light.png":[["halftone-light.e1ed191e.png","src/assets/halftone-light.png"],"src/assets/halftone-light.png"],"./assets/4.jpg":[["4.d9e45535.jpg","src/assets/4.jpg"],"src/assets/4.jpg"],"./assets/abematowers.jpg":[["abematowers.7abc3762.jpg","src/assets/abematowers.jpg"],"src/assets/abematowers.jpg"],"./assets/7.jpg":[["7.d587cb86.jpg","src/assets/7.jpg"],"src/assets/7.jpg"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"src/speakers.js":[function(require,module,exports) {
 "use strict";
 
 require("reset-css");
@@ -215,7 +215,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62899" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64293" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
