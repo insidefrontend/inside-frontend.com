@@ -51,7 +51,7 @@ html(lang="ja")
                 ul.sessions-list
                     for speaker in speakers
                         +sessions(speaker)
-                    .session#ameba
+                    .session#B-4
                         .session-speaker
                             .speaker
                                 .speaker-image
@@ -83,7 +83,7 @@ html(lang="ja")
                             .session-title
                                 span Web App Checklist ~高品質のWebアプリケーションをつくるために~
                             .session-summary 高品質のWebアプリケーションをつくるためには、ユーザーインターフェイス、パフォーマンス、アクセシビリティ、セキュリティ、ネットワーク、開発体験など様々な要素を適切に組み合わせなければなりません。Amebaの新機能である「こえのブログ」ではそれらを満たすためにどのように開発していったのか、チェックリスト形式でお伝えします。
-                    .session#cats
+                    .session#C-6
                         .session-speaker
                             .speaker
                                 .speaker-image
@@ -115,7 +115,7 @@ html(lang="ja")
                             .session-title
                                 span 品質と開発速度を両立させるために捨てたものと守ったもの
                             .session-summary 4月にリリースした WinTicket (競輪のインターネット投票サービス) では、開発速度はもちろんのこと、後発がゆえにプロダクトを高い品質でリリースし差別化を図る必要がありました。様々な利用者、利用環境が想定される公営ギャンブルという事業ドメインにおいて、高い利用体験を提供することを品質として定義しました。大規模な開発においてそれらの品質と開発速度を両立するための戦略的取捨選択の過程とその結果、これからについてお話します。
-                    .session#yahoo
+                    .session#A-3
                         .session-speaker
                             .speaker
                                 .speaker-image
@@ -158,24 +158,24 @@ html(lang="ja")
                 .sponsors-body
                     ul.sponsors-list
                         li
-                            .sponsor
+                            .sponsor.-gold
                                 a(href='//www.fastly.jp/')
                                     img(src='/src/assets/sponsors/bnr-fastly.svg' alt='Fastly')
                         li
-                            .sponsor
-                                a(href='//www.nikkei.co.jp/')
+                            .sponsor.-silver
+                                a(href='http://www.nikkei.co.jp/')
                                     img(src='/src/assets/sponsors/bnr-nikkei.svg' alt='日本経済新聞社')
                 div.sponsors-subheader.Section-header
                     h3.SubHeading & Organizers
                 .sponsors-body
-                    ul.sponsors-list
+                    ul.organizers-list
                         li
                             .organizer
-                                a(href='//www.cyberagent.co.jp/')
+                                a(href='https://www.cyberagent.co.jp/')
                                     img(src='/src/assets/sponsors/bnr-cyberagent.svg' alt='株式会社サイバーエージェント')
                         li
                             .organizer
-                                a(href='//www.yahoo.co.jp/')
+                                a(href='https://www.yahoo.co.jp/')
                                     img(src='/src/assets/sponsors/bnr-yahoo.svg' alt='ヤフー株式会社')
 
     footer.footer
