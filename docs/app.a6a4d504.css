@@ -177,6 +177,8 @@ img, svg, iframe {
   font-size: 1.5rem;
   font-size: var(--font-size-heading3);
   font-weight: bold;
+  color: #DEC669;
+  color: var(--color-secondary);
 }
 
 @media (min-width: 600px) {
@@ -198,6 +200,8 @@ img, svg, iframe {
   font-size: 1.25rem;
   font-size: var(--font-size-heading4);
   text-transform: uppercase;
+  color: #DEC669;
+  color: var(--color-secondary);
 }
 
 @media (min-width: 600px) {
@@ -1330,6 +1334,11 @@ background-size: 160px;
   color: var(--color-dark-invert);
 }
 
+.venue .Heading {
+  color: #FFFFFC;
+  color: var(--color-dark-invert);
+}
+
 .venue-content {
   min-height: 560px;
   background-image: url(abematowers.7abc3762.jpg);
@@ -1482,14 +1491,11 @@ background-size: 160px;
 .sponsors-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sponsors-list > * {
-  margin-right: 16px;
-  margin-right: var(--spacing-2x);
-  margin-left: 16px;
-  margin-left: var(--spacing-2x);
   margin-bottom: 24px;
   margin-bottom: var(--spacing-3x);
 }
@@ -1508,7 +1514,7 @@ background-size: 160px;
   height: 120px;
 }
 
-.sponsor img {
+.sponsor.-silver img {
   width: 240px;
   height: 96px;
 }
@@ -1521,17 +1527,14 @@ background-size: 160px;
 }
 
 /* Organizer */
-.organizer {
-  /*background-color: #ffffff;*/
-}
 
 .organizer a {
   display: inline-block;
 }
 
 .organizer img {
-  width: 150px;
-  height: 60px;
+  width: 180px;
+  height: 72px;
 }
 
 @media (min-width: 600px) {
@@ -1539,6 +1542,23 @@ background-size: 160px;
     width: 240px;
     height: 96px;
   }
+}
+
+/* Organizers */
+
+.organizers-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.organizers-list > * {
+  margin-right: 16px;
+  margin-right: var(--spacing-2x);
+  margin-left: 16px;
+  margin-left: var(--spacing-2x);
+  margin-bottom: 24px;
+  margin-bottom: var(--spacing-3x);
 }
 
 /* Footer */
