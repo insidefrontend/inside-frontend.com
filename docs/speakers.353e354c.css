@@ -938,6 +938,12 @@ background-size: 160px;
   /*color: var(--color-dark-invert);*/
 }
 
+.timetable-lead {
+  margin: 0 16px 32px 16px;
+  margin: 0 var(--spacing-2x) var(--spacing-4x) var(--spacing-2x);
+  text-align: center;
+}
+
 .timetable-table {
   position: relative;
 }
@@ -988,6 +994,8 @@ background-size: 160px;
 
 .timetable-session {
   border-radius: 3px;
+  margin-bottom: 8px;
+  margin-bottom: var(--spacing-1x);
   padding: 8px;
   padding: var(--spacing-1x);
   background-color: #2F2E38;
@@ -996,6 +1004,10 @@ background-size: 160px;
   color: var(--color-grayscale-100);
   font-family: 'Roboto Mono', monospace;
   font-family: var(--font-family-en);
+}
+
+.timetable-session:last-child {
+  margin-bottom: 0;
 }
 
 .timetable-label {
@@ -1059,6 +1071,7 @@ background-size: 160px;
   }
 
   .timetable-session {
+    margin-bottom: 0;
     padding: 16px;
     padding: var(--spacing-2x);
   }
@@ -1146,8 +1159,20 @@ background-size: 160px;
   }
 
   .timetable-item {
+    margin-bottom: 16px;
+    margin-bottom: var(--spacing-2x);
+    padding-bottom: 0;
     flex: 1 0 calc(100% - 120px);
     min-width: 0;
+  }
+
+  .timetable-time.-ama,
+  .timetable-item.-ama {
+    margin-top: -12px; /* same speaker session */
+  }
+
+  .timetable-session {
+    margin-bottom: 0;
   }
 }
 
