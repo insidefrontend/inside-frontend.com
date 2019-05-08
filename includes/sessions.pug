@@ -5,7 +5,7 @@ mixin sessions(speaker)
         .session-speaker
           .speaker
             .speaker-image
-              img(src=speaker.image alt=`${speaker.name}の画像`)
+              img(src=speaker.image alt=`${speaker.name}の画像` loading='lazy')
             .speaker-body
               p.speaker-name= speaker.name
               p.speaker-title
