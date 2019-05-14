@@ -23,3 +23,10 @@ mixin sessions(speaker)
           .session-title
             span= speaker.session_title
           .session-summary !{speaker.session_summary.replace(/\r?\n|\r/g,"<br>")}
+            if speaker.slidoId
+              .session-ama
+                img(src=`https://chart.apis.google.com/chart?cht=qr&chs=480x480&chl=https://app2.sli.do/event/${speaker.slidoId}/live/questions`).session-amaQR
+                a(href=`https://app2.sli.do/event/${speaker.slidoId}/live/questions` target="_blank" rel="noopener").session-ask.Ask
+                  img(src="/src/assets/ask.svg" alt="")
+                  span Ask the speaker
+
