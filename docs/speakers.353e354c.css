@@ -1041,6 +1041,39 @@ background-size: 160px;
   margin-left: 0.5em;
 }
 
+.timetable-item.-ama .timetable-session {
+  position: relative;
+}
+
+.timetable-ask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 0 16px;
+  padding: 0 var(--spacing-2x);
+  height: 48px;
+  height: var(--button-height-md);
+  line-height: 1.3;
+  line-height: var(--line-height-sm);
+  color: #FFFFFC;
+  color: var(--color-grayscale-100);
+  text-decoration: none;
+  transition: color 300ms ease-in;
+}
+
+.timetable-ask:hover {
+  color: #BAB9C9;
+}
+
+.timetable-ask img {
+  margin-right: 4px;
+}
+
 @media (min-width: 600px) {
   .timetable {
     max-width: 848px;
