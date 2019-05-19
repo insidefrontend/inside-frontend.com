@@ -93,7 +93,12 @@ img, svg, iframe {
   transition: background-color 300ms ease-in;
 }
 
-.Button:hover {
+.Button.-soldout {
+  text-decoration: line-through;
+  background-color: var(--color-secondary);
+}
+
+a[href].Button:hover {
   background-color: var(--button-color-primary-hover);
 }
 
