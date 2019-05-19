@@ -237,6 +237,44 @@ a[href].Button.-ama:hover {
 
 }
 
+/* Thank you for coming */
+.thankyouforcoming {
+  margin-top: var(--spacing-8x);
+  max-width: 848px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: var(--spacing-4x) var(--spacing-2x);
+  background-color: var(--color-primary-highlight);
+  text-align: center;
+  border-radius: 3px;
+}
+
+.thankyouforcoming .Heading {
+  margin-bottom: var(--spacing-4x);
+}
+
+.thankyouforcoming-message {
+  font-size: var(--font-size-md);
+}
+
+.thankyouforcoming-link {
+  margin-top: var(--spacing-4x);
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (min-width: 840px) {
+  .thankyouforcoming {
+    padding: var(--spacing-4x);
+  }
+
+  .thankyouforcoming-message {
+    font-size: var(--font-size-lg);
+  }
+}
+
 /* Sitename */
 
 .sitename {
@@ -443,10 +481,6 @@ a[href].Button.-ama:hover {
 
 /* Introduction */
 
-.intro {
-  margin-top: var(--spacing-8x);
-}
-
 .intro-section + .intro-section {
   margin-top: var(--spacing-3x);
 }
@@ -505,10 +539,6 @@ background-size: 160px;
 }
 
 @media (min-width: 600px) {
-  .intro {
-    margin-top: 96px;
-  }
-
   .intro-image {
     margin-left: auto;
     margin-right: auto;
@@ -560,10 +590,6 @@ background-size: 160px;
 }
 
 @media (min-width: 1024px) {
-  .intro {
-    margin-top: var(--spacing-16x);
-  }
-
   .intro-section + .intro-section {
     margin-top: var(--spacing-8x);
   }
