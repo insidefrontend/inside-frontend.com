@@ -6,9 +6,9 @@
   --color-accent: #FAD64D;
   --color-accent-highlight: #FED430;
   --color-seminar: #c14f5d;
-  --color-seminar-highlight: #EB7A88;
+  --color-seminar-highlight: #eb5d6f;
   --color-ama: #337d6f;
-  --color-ama-highlight: #6BF0D7;
+  --color-ama-highlight: #30a98e;
   --color-grayscale-100: #FFFFFC;
   --color-grayscale-200: #FFFADE;
   --color-grayscale-800: #545165;
@@ -98,8 +98,26 @@ img, svg, iframe {
   background-color: var(--color-secondary);
 }
 
+.Button.-seminar {
+  background-color: var(--color-seminar);
+  color: var(--color-grayscale-100);
+}
+
+.Button.-ama {
+  background-color: var(--color-ama);
+  color: var(--color-grayscale-100);
+}
+
 a[href].Button:hover {
   background-color: var(--button-color-primary-hover);
+}
+
+a[href].Button.-seminar:hover {
+  background-color: var(--color-seminar-highlight);
+}
+
+a[href].Button.-ama:hover {
+  background-color: var(--color-ama-highlight);
 }
 
 .Button-subLabel {
@@ -1070,6 +1088,12 @@ background-size: 160px;
   color: var(--color-secondary);
 }
 
+.session-title a {
+  /*margin: 1em;*/
+  /*color: inherit;*/
+  /*font-size: smaller;*/
+}
+
 .session-title > span {
   display: inline;
   font-weight: bold;
@@ -1101,6 +1125,20 @@ background-size: 160px;
 
 .session-amaQR {
   display: none;
+}
+
+.session-handout {
+  margin-top: var(--spacing-2x);
+  display: flex;
+}
+
+.session-handout > * {
+  flex: 1 1 50%;
+  white-space: nowrap;
+}
+
+.session-handout > * + * {
+  margin-left: var(--spacing-2x);
 }
 
 @media (min-width: 600px) {
@@ -1152,6 +1190,13 @@ background-size: 160px;
     margin-right: 0.5em;
   }
 
+  .session-handout {
+    justify-content: flex-end;
+  }
+
+  .session-handout > * {
+    max-width: 240px;
+  }
 }
 
 @media (min-width: 840px) {
@@ -1173,8 +1218,6 @@ background-size: 160px;
   }
 
   .session-summary {
-    display: flex;
-    align-items: flex-start;
     font-size: var(--font-size-md);
   }
 
