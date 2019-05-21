@@ -48,7 +48,8 @@ html(lang="ja")
 
             section.thankyouforcoming
                 h2.Heading Thank you for coming!
-                p.thankyouforcoming-message ご来場・ご登壇のみなさまありがとうございました！
+                p.thankyouforcoming-message
+                    | ご来場・ご登壇のみなさまありがとうございました！
                 p.thankyouforcoming-link
                   a(href='https://twitter.com/i/moments/1129696037717794817' target="_blank" rel="noopener").Button Inside Frontend #3 まとめ
 
@@ -83,6 +84,9 @@ html(lang="ja")
                 ul.speakers-list
                     for speaker in speakers
                         +speakers(speaker)
+
+                .speakers-action
+                    a(href='/speakers').Button Sessions
 
         section#timetable.timetable.Section
             header.timetable-header.Section-header

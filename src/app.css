@@ -652,12 +652,24 @@ background-size: 160px;
   font-family: var(--font-family-en);
 }
 
+.speakers-action {
+  margin-top: var(--spacing-4x);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 240px;
+}
+
 
 @media (min-width: 1280px) {
   .speakers {
     background-size: auto 2048px;
     background-position: left top;
   }
+
+  .speakers-action {
+    margin-top: var(--spacing-8x);
+  }
+
 }
 
 @media (min-width: 600px) {
