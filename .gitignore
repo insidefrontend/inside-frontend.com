@@ -56,3 +56,6 @@ stats.json
 
 # parcel
 .cache/
+
+# Mac OS
+.DS_Store
