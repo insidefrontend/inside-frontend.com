@@ -8,14 +8,14 @@
     "build": "parcel build *.pug -d docs/"
   },
   "devDependencies": {
-    "eslint": "^5.15.3",
-    "parcel-bundler": "^1.11.0",
-    "postcss-custom-properties": "^8.0.9",
-    "postcss-modules": "^1.4.1",
-    "pug": "^2.0.3",
-    "stylelint": "^9.10.1"
+    "eslint": "^6.8.0",
+    "parcel-bundler": "^1.12.4",
+    "postcss-custom-properties": "^9.0.2",
+    "postcss-modules": "^1.5.0",
+    "pug": "^2.0.4",
+    "stylelint": "^13.1.0"
   },
   "dependencies": {
-    "reset-css": "^4.0.1"
+    "reset-css": "^5.0.1"
   }
 }
